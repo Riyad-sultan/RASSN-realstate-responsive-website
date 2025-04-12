@@ -4,12 +4,19 @@
     box-sizing: border-box;
 
 }
+body{
+  background: url(../image/office-building-modern-business-center_42691-253.jpg);
+}
+html {
+  
+  scroll-behavior: smooth;
+}
 .header{
     position: relative;
     z-index: 2;
 }
 .header-top{
-    background: rgba(0, 0, 0, 0.616);
+    
     padding-block: 15px;
 
 }
@@ -74,13 +81,68 @@
 .header-social-link-list a {
     text-decoration: none; 
     font-size: 24px; 
-    color: #000;
+    color:#fff;
 }
-.navbar .container{
-    background: #fff;
-    color: #000;
+
+.navbar {
+  /* background-color: burlywood; */
+   margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 10px;
+    
+  
+  
+ 
 }
+
+/* Styling the container */
+
+
+/* Styling the unordered list */
+.navbar-list {
+  list-style: none;
+  font-size: 25px;
+  
+  display: flex;
+  gap: 20px;
+  margin-left: 600px;
+  
+  
+}
+
+/* Styling the list items and links */
+.navbar-list .logo{
+  margin-left: -600px;
+  margin-top: -60px;
+  align-items: center;
+  
+  
+ 
+  
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.705);
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-list a:hover {
+  color: #00bcd4;
+}
+.main h1{
+  padding: 40px;
+  font-size: 70px;
+}
+.main{
+ 
+  /* background: url(../image/office-building-modern-business-center_42691-253.jpg); */
+}
+
 
 /* .header-top-link .header-social-link-list {
   color:#fff;

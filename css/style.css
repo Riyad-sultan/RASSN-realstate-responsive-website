@@ -8,8 +8,11 @@ body{
   background: url(../image/office-building-modern-business-center_42691-253.jpg);
 }
 html {
+overflow-y: scroll;
+
   
-  scroll-behavior: smooth;
+  
+  
 }
 .header{
     position: relative;
@@ -42,10 +45,11 @@ html {
 }
 .header-top-list{
     gap: 16px;
+    
 }
 .header-top-link {
-    color:white;
-    font-size: 16px;
+    color:black;
+    font-size: 20px;
     font-weight:700;
     display: flex;
     justify-content: center;
@@ -81,51 +85,36 @@ html {
 .header-social-link-list a {
     text-decoration: none; 
     font-size: 24px; 
-    color:#fff;
+    color:blue
 }
-
+.header-social-link-list a:hover{
+  color: rgb(255, 0, 0);
+}
 .navbar {
-  /* background-color: burlywood; */
+   /* background-color: burlywood;  */
    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-    margin-top: 10px;
+    padding: 20px;
     
-  
-  
- 
 }
-
-/* Styling the container */
-
-
+.navbar-list .logo{
+  margin-left: -550px;
+ width: 300px;
+ border-radius:20px;
+}
 /* Styling the unordered list */
 .navbar-list {
   list-style: none;
   font-size: 25px;
-  
   display: flex;
   gap: 20px;
   margin-left: 600px;
-  
-  
+  margin-top: -10px;
 }
-
-/* Styling the list items and links */
-.navbar-list .logo{
-  margin-left: -600px;
-  margin-top: -60px;
-  align-items: center;
-  
-  
- 
-  
-}
-
 .navbar-list a {
   text-decoration: none;
-  color:rgba(0, 0, 0, 0.705);
+  /* color:rgba(0, 0, 0, 0.705); */
   font-weight: bold;
   padding: 5px 10px;
   transition: color 0.3s ease;
@@ -137,31 +126,10 @@ html {
 .main h1{
   padding: 40px;
   font-size: 70px;
+  color:rgba(50, 82, 53, 0.699)
 }
-.main{
+.main h1{
  
   /* background: url(../image/office-building-modern-business-center_42691-253.jpg); */
+ 
 }
-
-
-/* .header-top-link .header-social-link-list {
-  color:#fff;
-  font-size: 15px;
-  
-}
-
-.header-top .wrapper,
-.header-top-social-list {
-    color: #fff;
-  display: flex;
-  align-items: center;
-}
-
-.header-top .wrapper { gap: 20px; }
-
-.header-top-social-list { gap: 8px; }
-
-.header-top-social-link {
-  color: var(--white);
-  font-size: 15px;
-} */

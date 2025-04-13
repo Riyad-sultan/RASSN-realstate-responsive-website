@@ -5,14 +5,18 @@
 
 }
 body{
+  
   background: url(../image/office-building-modern-business-center_42691-253.jpg);
+  @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
 }
 html {
-overflow-y: scroll;
+  
 
-  
-  
-  
+
 }
 .header{
     position: relative;
@@ -57,7 +61,7 @@ overflow-y: scroll;
     gap: 5px;
   }
   .header-top-link span{
-    color: orange
+    color: red;
   }
   
  
@@ -85,13 +89,13 @@ overflow-y: scroll;
 .header-social-link-list a {
     text-decoration: none; 
     font-size: 24px; 
-    color:blue
+    color:bisque
 }
 .header-social-link-list a:hover{
   color: rgb(255, 0, 0);
 }
 .navbar {
-   /* background-color: burlywood;  */
+  
    margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -103,7 +107,7 @@ overflow-y: scroll;
  width: 300px;
  border-radius:20px;
 }
-/* Styling the unordered list */
+
 .navbar-list {
   list-style: none;
   font-size: 25px;
@@ -114,7 +118,7 @@ overflow-y: scroll;
 }
 .navbar-list a {
   text-decoration: none;
-  /* color:rgba(0, 0, 0, 0.705); */
+  
   font-weight: bold;
   padding: 5px 10px;
   transition: color 0.3s ease;
@@ -128,8 +132,45 @@ overflow-y: scroll;
   font-size: 70px;
   color:rgba(50, 82, 53, 0.699)
 }
-.main h1{
- 
-  /* background: url(../image/office-building-modern-business-center_42691-253.jpg); */
- 
-}
+
+
+        form {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-left: 600px;
+            margin-top: -50px;
+        }
+        form .location{
+          font-size: 30px;
+        }
+
+        select {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+         
+        }
+        form .search{
+          font-size: 20px;
+          width: 150px;
+        }
+        form .search{
+          background-color: #007BFF;
+          padding: 8px 16px;
+          font-size: 16px;
+          color: #fff;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+
+        }
+        form .search:hover{
+          color: #00bcd4;
+        }
+        
+

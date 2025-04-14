@@ -53,9 +53,13 @@ ul {
   font-size: 20px;
   color: rgb(10, 6, 1);
   text-decoration: none;
+  
+
 }
 .header-social-link-list a:hover{
   color: red;
+  
+    
 }
 
 
@@ -172,6 +176,7 @@ ul {
   .header-social-link-list {
       gap: 8px;
       font-size: 18px;
+      
   }
   .navbar {
     padding: 10px;

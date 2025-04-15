@@ -1,0 +1,43 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Headings styling */
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0;
+}
+
+/* Image styling */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling */
+h2 {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+}
+
+/* Add padding to the container */
+body {
+    padding: 20px;
+}

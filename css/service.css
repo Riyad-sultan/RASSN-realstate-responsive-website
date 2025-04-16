@@ -166,7 +166,7 @@ body{
 
 .image-gallery img {
   width: 100%;
-  max-width: 300px; /* Adjust the size of images */
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -174,10 +174,23 @@ body{
 }
 
 .image-gallery img:hover {
-  transform: scale(1.05); /* Enlarge on hover */
+  transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-
+.service-image-ForSell .link{
+  font-size: 30px;
+ text-decoration: none;
+}
+.service-image-ForSell .link:hover{
+  color: darkgreen;
+}
+.service-image-ForRent a{
+font-size: 30px;
+text-decoration: none;
+}
+.service-image-ForRent a:hover{
+  color: darksalmon;
+}
 
 
   /* Responsive */

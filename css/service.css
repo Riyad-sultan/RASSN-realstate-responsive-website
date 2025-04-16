@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background: url(../image/services4.jpg);
+    /* background: url(../image/services4.jpg); */
+    /* background-color: rgba(95, 158, 160, 0.61); */
     background-size: cover;
 
 }
@@ -14,7 +15,7 @@ body{
     align-items: center;
     padding-top: 20px; 
   }
-  
+
   .navbar-list {
     display: flex;
     gap: 20px;
@@ -54,47 +55,128 @@ body{
     
   }
 
-  .services {
-    text-align: center;
-    padding: 20px;
-    /* background-color: #f9f9f9; */
+  /* Styling for the Services Section */
+.services {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f9;
 }
 
+.services h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Service Container */
 .service-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
+/* Individual Service Card */
 .service-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   
-    max-width: calc(33% - 40px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card i {
-    font-size: 40px;
-    color: #3e64ff;
-    margin-bottom: 10px;
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 .service-card h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .service-card p {
-    color: #666;
-    font-size: 14px;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
 }
 
+/* Icons (if used) */
+.service-card i {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+/* Updated Icon Styling */
+.service-card i {
+  font-size: 3em;
+  color:rgba(255, 68, 0, 0.74);
+  margin-bottom: 15px; 
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover i {
+  color: #0056b3;
+  transform: scale(1.2);
+}
+
+/* Service Image Section */
+.service-image {
+  padding: 20px;
+  background: url(url../image/istockphoto-1217326577-612x612.jpg);
+}
+
+.service-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.service-image-ForRent,
+.service-image-ForSell {
+  width: 48%; /* Equal space for each section */
+  text-align: center;
+}
+
+.service-image-ForRent h1,
+.service-image-ForSell h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 300px; /* Adjust the size of images */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05); /* Enlarge on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
 
 
 

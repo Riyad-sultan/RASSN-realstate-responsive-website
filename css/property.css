@@ -28,7 +28,7 @@ body {
 }
 
 .navbar-list .logo {
-    width: 150px; /* Scaled for responsiveness */
+    width: 150px; 
     border-radius: 20px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -59,9 +59,9 @@ h1 {
 }
 
 /* Property Grid */
-.property-grid {
-    display: grid; /* Use grid layout for flexibility */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust dynamically */
+.property {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
 }
@@ -73,90 +73,98 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.property-item:hover{
+    transform: scale(1.05);
+}
 .property-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.property-item img:hover
+{
+    transform: scale(1.06);
 }
 
 .property-item h2 {
     font-size: 1.25em;
-    color: #333;
+    color: rgba(0, 0, 0, 0.747);
     margin-top: 10px;
 }
 
 .property-item p {
     font-size: 1em;
-    color: #666;
+    color: #666666e3;
     margin: 5px 0;
 }
 
-/* Larger Screens (Laptops and PCs) */
+/* Larger Screens (Laptops and desktops) */
 @media (min-width: 1024px) {
     body {
-        padding: 40px; /* Add more spacing for large screens */
+        padding: 40px; 
     }
 
     .navbar-list a {
-        font-size: 1.2em; /* Enlarge navigation text */
+        font-size: 1.2em;
     }
 
     h1 {
-        font-size: 2.5em; /* Make the title larger for bigger screens */
+        font-size: 2.5em;
     }
 
-    .property-grid {
-        gap: 30px; /* Increase spacing between property items */
+    .property {
+        gap: 30px;
     }
 
     .property-item {
-        padding: 20px; /* Increase padding around property details */
+        padding: 20px;
     }
 }
 
 /* Extra-Large Screens (13-inch to 16-inch and Above) */
 @media (min-width: 1440px) {
     body {
-        padding: 50px; /* Add generous padding for widescreen devices */
+        padding: 50px; 
     }
 
     .navbar {
-        padding: 20px 50px; /* Space out the navbar for extra-large screens */
+        padding: 20px 50px;
     }
 
     .navbar-list {
-        gap: 30px; /* Add spacing between navbar items */
+        gap: 30px;
     }
 
     h1 {
-        font-size: 3em; /* Larger title for big displays */
+        font-size: 3em;
     }
 
-    .property-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider property cards */
-        gap: 40px; /* Extra spacing for clarity */
+    .property {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
     }
 
     .property-item {
         max-width: 300px; /* Limit width of property cards */
-        padding: 25px; /* Add generous padding */
+        padding: 25px;
     }
 
     .property-item h2 {
-        font-size: 1.5em; /* Larger headings for properties */
+        font-size: 1.5em;
     }
 
     .property-item p {
-        font-size: 1.1em; /* Enlarge property details text */
+        font-size: 1.1em;
     }
 }
 
 /* Tablets (Width: 768px or Smaller) */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 10px;
     }
 
     h1 {
@@ -164,27 +172,27 @@ h1 {
     }
 
     .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     .navbar-list {
-        flex-direction: column; /* Stack links vertically */
+        flex-direction: column;
         gap: 10px;
         text-align: center;
     }
 
     .navbar-list .logo {
-        width: 130px; /* Adjust logo size for smaller screens */
+        width: 130px;
         margin-bottom: 15px;
     }
 
-    .property-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    .property {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     }
 
     .property-item h2 {
-        font-size: 1.2em; /* Adjust font sizes */
+        font-size: 1.2em; 
     }
 
     .property-item p {
@@ -195,32 +203,34 @@ h1 {
 /* Mobile Phones (Width: 480px or Smaller) */
 @media (max-width: 480px) {
     body {
-        padding: 5px; /* Adjust padding for very small screens */
+        padding: 5px;
     }
 
     h1 {
-        font-size: 1.5em; /* Adjust heading size */
+        font-size: 1.5em;
     }
 
     .navbar-list a {
-        font-size: 14px; /* Scale down navbar text */
+        font-size: 14px; 
         padding: 8px;
     }
 
-    .property-grid {
-        grid-template-columns: 1fr; /* Single column for properties */
+    .property {
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
     .property-item {
-        padding: 10px; /* Adjust padding */
+        padding: 10px;
+       
     }
+    
 
     .property-item h2 {
         font-size: 1em;
     }
 
     .property-item p {
-        font-size: 0.9em; /* Smaller font sizes */
+        font-size: 0.9em;
     }
 }

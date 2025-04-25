@@ -4,459 +4,499 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property</title>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    
     <link  href="css/property.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
+            <ul class="navbar-list">
+                <li><img src="image/bd583e754a678efe5cb5b6429fd7d29e.jpg" class="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     
-        <ul class="navbar-list">
-            <li><img src="image/bd583e754a678efe5cb5b6429fd7d29e.jpg" class="logo"></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Service.html">Services</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-</nav>
-
-    <h1>Property Listings</h1>
-    <div class="property">
-        <!-- Luxury Apartments -->
-        <div class="property-item">
-            <img src="image/images.jfif" alt="Luxury Apartment">
-            <h2>Luxury Apartments</h2>
-            <p>Price: $300,000</p>
-            <!-- <p>Bedrooms: 2</p> -->
-            <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms, and panoramic views.</p>
-        </div>
-        <!-- family Home -->
-        <div class="property-item">
-            <img src="image/360_F_162064034_HI2YEgV7km3HMy0rccQczKH2vvpI4OnB.jpg" alt="Family Home">
-            <h2>Family Homes</h2>
-            <p>Price: $500,000</p>
+        <h1>Property Listings</h1>
+    
+    <!-- Row 1 -->
+    <div class="property-row">
+        <div class="property-item" onclick="displayImages('row1', 'image/download (4).jfif', 'image/addtional_image/download (5).jfif', 'image/addtional_image/images (29).jfif', 'image/images (25).jfif')">
+            <img src="image/download (4).jfif" alt="Luxury Apartment">
+            <h2>Luxury Apartment</h2>
+            <p>Price: $60,000</p>
+             <!-- <p>Bedrooms: 2</p> -->
+           
+            <p>Modern living spaces and Swimming pool</p>
             <p>Bedrooms: 4</p>
-            <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row1', 'image/360_F_162064034_HI2YEgV7km3HMy0rccQczKH2vvpI4OnB.jpg', 'image/addtional_image/download (4).jfif', 'image/addtional_image/images (36).jfif', 'image/addtional_image/images (59).jfif')">
+            <img src="image/360_F_162064034_HI2YEgV7km3HMy0rccQczKH2vvpI4OnB.jpg" alt="Family Home">
+            <h2>Family Home</h2>
+            <p>Price: $40,000</p>
+            
+            <!-- <p>Bedrooms: 4</p>
+            <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p> -->
+            <p>family homes with bedroom and living room,</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+           
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row1', 'image/istockphoto-1150278004-612x612.jpg', 'image/addtional_image/download (6).jfif', 'image/addtional_image/images (31).jfif', 'image/addtional_image/images (61).jfif')">
+            <img src="image/istockphoto-1150278004-612x612.jpg" alt="Investment Property">
+            <h2>Investment Property</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment and organization</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
             
         </div>
-        <!-- Investment Properties -->
-        <div class="property-item">
-            <img src="image/istockphoto-1150278004-612x612.jpg" alt="Investment Property">
-            <h2>Investment Properties</h2>
-            <p>Price: $250,000</p>
-            <p>Prime real estate locations for investors seeking growth opportunities.</p>
-        </div>
-          <!-- Vacation Homes -->
-          <div class="property-item">
-            <img src="image/2022-12-05 (1).jpg" alt="Vacation Home">
-            <h2>Vacation Homes</h2>
-            <p>Price: $400,000</p>
-            <p>Bedrooms: 7</p>
-            <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-        </div>
-             <!-- Vacation Homes -->
-          <div class="property-item">
-            <img src="image/2022-12-05.jpg" alt="Vacation Home">
-            <h2>Vacation Homes</h2>
-            <p>Price: $499,000</p>
-            <p>Bedrooms: 10</p>
-            <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-        
-        </div>
-        <div class="property-item">
-            <img src="image/istockphoto-1165384568-1024x1024.jpg" alt="Luxury Apartment">
-            <h2>Luxury Apartments</h2>
-            <p>Price: $399,000</p>
-            <!-- <p>Bedrooms: 8</p> -->
-            <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms, and panoramic views.</p>
-        </div>
-        
-        <!-- Family Homes -->
-         <div class="property-item">
-            <img src="image/240_F_157367489_FSqP231EvpCB9fqD5s5PhCp8MOuEcfih.jpg" alt="Family Home">
-            <h2>Family Homes</h2>
-            <p>Price: $504,000</p>
+    
+        <div class="property-item" onclick="displayImages('row1', 'image/unnamed.jpg', 'image/addtional_image/download (2).jfif', 'image/addtional_image/download (13).jfif', 'image/addtional_image/images - 2025-04-24T105129.479.jfif')">
+            <img src="image/unnamed.jpg" alt="Modern Villa">
+            <h2>Vacation Home</h2>
+            <p>Price: $30,000</p>
+            <p>Relaxing place and leisure-friendly areas.</p>
             <p>Bedrooms: 4</p>
-            <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
         </div>
-        <div class="property-item">
-            <img src="image/240_F_57688175_PeIsD8zskMwobbM0NIVMIII0nRegWsal.jpg" alt="Family Home">
+    </div>
+    
+    <!-- Display Area for Row 1 -->
+    <div class="display-area" id="display-row1">
+        <img id="row1-main-image" src="" alt="">
+        <img id="row1-bedroom-image" src="" alt="">
+        <img id="row1-bathroom-image" src="" alt="">
+        <img id="row1-livingroom-image" src="" alt="">
+    </div>
+    
+    <!-- Row 2 -->
+    <div class="property-row">
+        <div class="property-item" onclick="displayImages('row2', 'image/2022-12-05 (1).jpg', 'image/addtional_image/images (1).jfif', 'image/addtional_image/images (32).jfif', 'image/addtional_image/images - 2025-04-24T105023.529.jfif')">
+            <img src="image/2022-12-05 (1).jpg" alt="Townhouse">
+            <h2>Vacation house</h2>
+            <p>Price: $30,000</p>
+            <p> Relaxing place and leisure-friendly areas.</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+             
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row2', 'image/istockphoto-1165384568-612x612.jpg', 'image/addtional_image/images (4).jfif', 'image/addtional_image/images (35).jfif', 'image/addtional_image/images (55).jfif')">
+            <img src="image/istockphoto-1165384568-612x612.jpg" alt="Beachfront Home">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <!-- <p>Bedrooms: 4</p> -->
+            <p>Spacious homes tailored for families</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row2', 'image/240_F_428739678_GvYgCSvj9fkmzzydtqKiAtfgCSZB2Io9.jpg', 'image/addtional_image/images (9).jfif', 'image/addtional_image/images (35).jfif', 'image/addtional_image/images (50).jfif')">
+            <img src="image/240_F_428739678_GvYgCSvj9fkmzzydtqKiAtfgCSZB2Io9.jpg" alt="Penthouse">
             <h2>Family Homes</h2>
             <p>Price: $400,000</p>
+            <!-- <p>Bedrooms: 4</p> -->
+            <p>Spacious homes tailored for families</p>
             <p>Bedrooms: 4</p>
-            <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
         </div>
-
-         <!-- Investment Properties -->
-         <div class="property-item">
-            <img src="image/istockphoto-1157526013-612x612.jpg" alt="Investment Property">
-            <h2>Investment Properties</h2>
-            <p>Price: $250,000</p>
-            <p>Prime real estate locations for investors seeking growth opportunities.</p>
+    
+        <div class="property-item" onclick="displayImages('row2', 'image/240_F_57688175_PeIsD8zskMwobbM0NIVMIII0nRegWsal.jpg', 'image/addtional_image/images (10).jfif', 'image/addtional_image/images (36).jfif', 'image/addtional_image/images (51).jfif')">
+            <img src="image/240_F_57688175_PeIsD8zskMwobbM0NIVMIII0nRegWsal.jpg" alt="Countryside Cottage">
+            <h2>Family Home</h2>
+            <p>Price: $400,000</p>
+           
+            <p>Spacious homes tailored for families</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
         </div>
-         <!-- Luxury Apartments -->
-         <div class="property-item">
+    </div>
+    
+    <!-- Display Area for Row 2 -->
+    <div class="display-area" id="display-row2">
+        <img id="row2-main-image" src="" alt="">
+        <img id="row2-bedroom-image" src="" alt="">
+        <img id="row2-bathroom-image" src="" alt="">
+        <img id="row2-livingroom-image" src="" alt="">
+    </div>
+    
+    <div class="property-row">
+        <div class="property-item" onclick="displayImages('row3', 'image/images (3).jfif', 'image/addtional_image/images (11).jfif', 'image/addtional_image/images (37).jfif', 'image/addtional_image/images (53).jfif')">
             <img src="image/images (3).jfif" alt="Luxury Apartment">
-            <h2>Luxury Apartments</h2>
-            <p>Price: $600,000</p>
-            <p>Bedrooms: 2</p>
-            <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms, and panoramic views.</p>
+            <h2>Luxury Apartment</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
         </div>
-         <!-- Luxury Apartments -->
-         <div class="property-item">
-            <img src="image/images (5).jfif" alt="Luxury Apartment">
-            <h2>Luxury Apartments</h2>
-            <p>Price: $300,000</p>
-            <p>Bedrooms: 2</p>
-            <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms,</p>
+    
+        <div class="property-item" onclick="displayImages('row3', 'image/images (5).jfif', 'image/addtional_image/images (12).jfif', 'image/addtional_image/images (38).jfif', 'image/addtional_image/images (54).jfif')">
+            <img src="image/images (5).jfif" alt="Family Home">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
         </div>
-         <!-- Luxury Apartments -->
-         <div class="property-item">
-            <img src="image/images (2).jfif" alt="Luxury Apartment">
-            <h2>Luxury Apartments</h2>
-            <p>Price: $300,000</p>
-            <p>Bedrooms: 2</p>
-            <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms, and panoramic views.</p>
+    
+        <div class="property-item" onclick="displayImages('row3', 'image/images (2).jfif', 'image/addtional_image/images (13).jfif', 'image/addtional_image/images (39).jfif', 'image/addtional_image/images (56).jfif')">
+            <img src="image/images (2).jfif" alt="Investment Property">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
         </div>
-       <!-- Family Homes -->
-       <div class="property-item">
-        <img src="image/property-2.jpg" alt="Family Home">
-        <h2>Family Homes</h2>
-        <p>Price: $500,000</p>
-        <p>Bedrooms: 4</p>
-        <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
+    
+        <div class="property-item" onclick="displayImages('row3', 'image/download (1).jfif', 'image/addtional_image/images (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (57).jfif')">
+            <img src="image/download (1).jfif" alt="Modern Villa">
+            <h2>Modern Villa</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
     </div>
-    <div class="property-item">
-        <img src="image/istockphoto-2152107582-1024x1024.jpg" alt="Family Home">
-        <h2>Family Homes</h2>
-        <p>Price: $500,000</p>
-        <p>Bedrooms: 4</p>
-        <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
+    
+    <!-- Display Area for Row 4 -->
+    <div class="display-area" id="display-row 4">
+        <img id="row3-main-image" src="" alt="">
+        <img id="row3-bedroom-image" src="" alt="">
+        <img id="row3-bathroom-image" src="" alt="">
+        <img id="row3-livingroom-image" src="" alt="">
     </div>
-     <!-- Family Homes -->
-     <div class="property-item">
-        <img src="image/property-1.jpg" alt="Family Home">
-        <h2>Family Homes</h2>
-        <p>Price: $500,000</p>
-        <p>Bedrooms: 4</p>
-        <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
+    <div class="property-row">
+        <div class="property-item" onclick="displayImages('row4', 'image/images (8).jfif', 'image/addtional_image/images (16).jfif', 'image/addtional_image/images (42).jfif', 'image/addtional_image/images (53).jfif')">
+            <img src="image/images (8).jfif" alt="Luxury Apartment">
+            <h2>Luxury Apartment</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-1141293839-612x612.jpg', 'image/addtional_image/images (17).jfif', 'image/addtional_image/images (46).jfif', 'image/addtional_image/images (61).jfif')">
+            <img src="image/istockphoto-1141293839-612x612.jpg" alt="Family Home">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment </p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-1322575582-612x612.jpg', 'image/addtional_image/images (18).jfif', 'image/addtional_image/images (47).jfif', 'image/addtional_image/images (56).jfif')">
+            <img src="image/istockphoto-1322575582-612x612.jpg" alt="Investment Property">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-2155879454-612x612.jpg', 'image/addtional_image/images (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (57).jfif')">
+            <img src="image/istockphoto-2155879454-612x612.jpg" alt="Modern Villa">
+            <h2>Modern Villa</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment and for organization</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
     </div>
-    <div class="property-item">
-        <img src="image/real-estate-6853680_640.jpg" alt="Family Home">
-        <h2>Family Homes</h2>
-        <p>Price: $500,000</p>
-        <p>Bedrooms: 4</p>
-        <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
+    
+    <!-- Display Area for Row 4 -->
+    <div class="display-area" id="display-row1">
+        <img id="row4-main-image" src="" alt="">
+        <img id="row4-bedroom-image" src="" alt="">
+        <img id="row4-bathroom-image" src="" alt="">
+        <img id="row4-livingroom-image" src="" alt="">
     </div>
-    <!-- Vacation Homes -->
-    <div class="property-item">
-        <img src="image/download (7).jfif" alt="Vacation Home">
-        <h2>Vacation Homes</h2>
-        <p>Price: $400,000</p>
-        <p>Bedrooms: 2</p>
-        <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-    </div>
-         <!-- Vacation Homes -->
-      <div class="property-item">
-        <img src="image/images (15).jfif" alt="Vacation Home">
-        <h2>Vacation Homes</h2>
-        <p>Price: $400,000</p>
-        <p>Bedrooms: 2</p>
-        <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-        
-    </div>
-    <!-- Vacation Homes -->
-    <div class="property-item">
-        <img src="image/download (5).jfif" alt="Vacation Home">
-        <h2>Vacation Homes</h2>
-        <p>Price: $400,000</p>
-        <p>Bedrooms: 2</p>
-        <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-    </div>
-         <!-- Vacation Homes -->
-      <div class="property-item">
-        <img src="image/unnamed.jpg" alt="Vacation Home">
-        <h2>Vacation Homes</h2>
-        <p>Price: $400,000</p>
-        <p>Bedrooms: 2</p>
-        <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-      </div>
-      <!-- Hotell -->
-<div class="property-item">
-    <img src="image/images (17).jfif" alt="Hotell">
-    <h2> For Hotell and Resturent</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<div class="property-item">
-    <img src="image/images (18).jfif" alt="For Hotell and Resturent">
-    <h2>For Hotell and Resturent</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<div class="property-item">
-    <img src="image/images (8).jfif" alt="For Hotell and Resturent">
-    <h2>For Hotell and Resturent</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<div class="property-item">
-    <img src="image/images (19).jfif" alt="For Hotell and Resturent">
-    <h2>For Hotell and Resturent</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-      <!-- Investment Properties -->
-<div class="property-item">
-    <img src="image/istockphoto-1225226886-612x612.jpg" alt="Investment Property">
-    <h2>Investment Properties</h2>
-    <p>Price: $250,000</p>
-    <p>Prime real estate locations for investors seeking growth opportunities.</p>
-</div>
-<!-- Investment Properties -->
-<div class="property-item">
-    <img src="image/13e52b20-b10d-4772-86f7-23114d716afa.Nc49uQrYmqF8CJGrL.webp" alt="Investment Property">
-    <h2>Investment Properties</h2>
-    <p>Price: $250,000</p>
-    <p>Prime real estate locations for investors seeking growth opportunities.</p>
-</div>
-<!-- Investment Properties -->
-<div class="property-item">
-    <img src="image/images (10).jfif" alt="Investment Property">
-    <h2>Investment Properties</h2>
-    <p>Price: $250,000</p>
-    <p>Prime real estate locations for investors seeking growth opportunities.</p>
-</div>
 
-<!-- Investment Properties -->
-<div class="property-item">
-    <img src="image/images (13).jfif" alt="Investment Property">
-    <h2>Investment Properties</h2>
-    <p>Price: $250,000</p>
-    <p>Prime real estate locations for investors seeking growth opportunities.</p>
-</div>
- <!-- Family Homes -->
- <div class="property-item">
-    <img src="image/blog-3.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<div class="property-item">
-    <img src="image/blog-1.png" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
- <!-- Family Homes -->
- <div class="property-item">
-    <img src="image/about-banner-2.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<div class="property-item">
-    <img src="image/240_F_428739678_GvYgCSvj9fkmzzydtqKiAtfgCSZB2Io9.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Hotell -->
-<div class="property-item">
-    <img src="image/images (17).jfif" alt="Hotell">
-    <h2> For Hotell and Resturent</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<div class="property-item">
-    <img src="image/images (18).jfif" alt="For Hotell and Resturent">
-    <h2>For Hotell and Resturent</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<div class="property-item">
-    <img src="image/images (24).jfif" alt="For Hotell and Resturent">
-    <h2>For Hotell and Resturent</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<div class="property-item">
-    <img src="image/images (21).jfif" alt="For Hotell and Resturent">
-    <h2>For Hotell and Resturent</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
- <!-- Family Homes -->
- <div class="property-item">
-    <img src="image/images (14).jfif" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
- <!-- Family Homes -->
- <div class="property-item">
-    <img src="image/images (9).jfif" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
- <!-- Family Homes -->
- <div class="property-item">
-    <img src="image/istockphoto-2155879454-612x612.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
- <!-- Family Homes -->
- <div class="property-item">
-    <img src="image/istockphoto-1328394896-612x612.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Luxury Apartments -->
-<div class="property-item">
-    <img src="image/building-4579244_640.jpg" alt="Luxury Apartment">
-    <h2>Luxury Apartments</h2>
-    <p>Price: $300,000</p>
-    <p>Bedrooms: 2</p>
-    <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms, and panoramic views.</p>
-</div>
-<!-- Luxury Apartments -->
-<div class="property-item">
-    <img src="image/images (1).jfif" alt="Luxury Apartment">
-    <h2>Luxury Apartments</h2>
-    <p>Price: $300,000</p>
-    <p>Bedrooms: 2</p>
-    <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms, and panoramic views.</p>
-</div>
-<!-- Luxury Apartments -->
-<div class="property-item">
-    <img src="image/images (16).jfif" alt="Luxury Apartment">
-    <h2>Luxury Apartments</h2>
-    <p>Price: $300,000</p>
-    <p>Bedrooms: 2</p>
-    <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms, and panoramic views.</p>
-</div>
-<!-- Luxury Apartments -->
-<div class="property-item">
-    <img src="image/images (6).jfif" alt="Luxury Apartment">
-    <h2>Luxury Apartments</h2>
-    <p>Price: $300,000</p>
-    <p>Bedrooms: 2</p>
-    <p>Modern living spaces featuring contemporary designs and amenities like pools, gyms, and panoramic views.</p>
-</div>
-   <!-- Vacation Homes -->
-   <div class="property-item">
-    <img src="image/istockphoto-2207035832-612x612.jpg" alt="Vacation Home">
-    <h2>Vacation Homes</h2>
-    <p>Price: $400,000</p>
-    <p>Bedrooms: 2</p>
-    <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-  </div>
-     <!-- Vacation Homes -->
-     <div class="property-item">
-        <img src="image/istockphoto-1931885043-612x612.jpg" alt="Vacation Home">
-        <h2>Vacation Homes</h2>
-        <p>Price: $400,000</p>
-        <p>Bedrooms: 2</p>
-        <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-      </div>
-         <!-- Vacation Homes -->
-         <div class="property-item">
-            <img src="image/istockphoto-1402924724-612x612.jpg" alt="Vacation Home">
-            <h2>Vacation Homes</h2>
-            <p>Price: $400,000</p>
-            <p>Bedrooms: 2</p>
-            <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-          </div>
-             <!-- Vacation Homes -->
-      <div class="property-item">
-        <img src="image/download (9).jfif" alt="Vacation Home">
-        <h2>Vacation Homes</h2>
-        <p>Price: $400,000</p>
-        <p>Bedrooms: 2</p>
-        <p>Relaxing retreats located in scenic and leisure-friendly areas.</p>
-      </div>
-      <!-- Family Homes -->
- <div class="property-item">
-    <img src="image/istockphoto-1087216950-612x612.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Family Homes -->
-<div class="property-item">
-    <img src="image/istockphoto-1146065491-612x612.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Family Homes -->
-<div class="property-item">
-    <img src="image/istockphoto-1141293839-612x612.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Family Homes -->
-<div class="property-item">
-    <img src="image/istockphoto-683638974-612x612.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Family Homes -->
-<div class="property-item">
-    <img src="image/istockphoto-1292190760-612x612.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Family Homes -->
-<div class="property-item">
-    <img src="image/istockphoto-1980039966-612x612.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Family Homes -->
-<div class="property-item">
-    <img src="image/rosalie1.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
-<!-- Family Homes -->
-<div class="property-item">
-    <img src="image/1000_F_118465200_0q7Of6UnbA8kDlYEe3a4PuIyue27fbuV.jpg" alt="Family Home">
-    <h2>Family Homes</h2>
-    <p>Price: $500,000</p>
-    <p>Bedrooms: 4</p>
-    <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p>
-</div>
+    <div class="property-row">
+        <div class="property-item" onclick="displayImages('row5', 'image/images (13).jfif', 'image/download (18).jfif', 'image/download (13).jfif', 'image/images (21).jfif')">
+            <img src="image/images (13).jfif" alt="Luxury Apartment">
+            <h2>Hotell and Resturent</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row5', 'image/istockphoto-2161773498-612x612.webp', 'image/istockphoto-1407156342-612x612.jpg', 'image/download (10).jfif', 'image/addtional_image/images (78).jfif')">
+            <img src="image/istockphoto-2161773498-612x612.webp" alt="Family Home">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row5', 'image/image.png', 'image/download (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (76).jfif')">
+            <img src="image/image.png" alt="Investment Property">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row5', 'image/istockphoto-176860161-612x612.jpg', 'image/addtional_image/images (20).jfif', 'image/addtional_image/images (40).jfif', 'image/images (25).jfif')">
+            <img src="image/istockphoto-176860161-612x612.jpg" alt="Modern Villa">
+            <h2>Modern Villa</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    </div>
+    
+    <!-- Display Area for Row 5 -->
+    <div class="display-area" id="display-row1">
+        <img id="row5-main-image" src="" alt="">
+        <img id="row5-bedroom-image" src="" alt="">
+        <img id="row5-bathroom-image" src="" alt="">
+        <img id="row5-livingroom-image" src="" alt="">
+    </div>
+
+    <div class="property-row">
+        <div class="property-item" onclick="displayImages('row6', 'image/istockphoto-1163919479-612x612.jpg', 'image/download (15).jfif', 'image/download (13).jfif', 'image/addtional_image/images (87).jfif')">
+            <img src="image/istockphoto-1163919479-612x612.jpg" alt="Luxury Apartment">
+            <h2>Luxury Apartment</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 30000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row6', 'image/misson-img.png', 'image/istockphoto-1328394896-612x612.jpg', 'image/addtional_image/images (43).jfif', 'image/addtional_image/images (61).jfif')">
+            <img src="image/misson-img.png" alt="Family Home">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row6', 'image/images (6).jfif', 'image/addtional_image/images (100).jfif', 'image/addtional_image/images (47).jfif', 'image/addtional_image/images (95).jfif')">
+            <img src="image/images (6).jfif" alt="">
+            <h2>Luxury Home</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    
+        <div class="property-item" onclick="displayImages('row6', 'image/istockphoto-503044702-612x612.jpg', 'image/istockphoto-1407156342-612x612.jpg', 'image/addtional_image/images (37).jfif', 'image/addtional_image/images (96).jfif')">
+            <img src="image/istockphoto-503044702-612x612.jpg" alt="Modern Villa">
+            <h2>Modern Villa</h2>
+            <p>Price: $30,000</p>
+            <p> Home for investment</p>
+            <p>Bedrooms: 4</p>
+            <p class="icon-container">
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+            </p>
+            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+        </div>
+    </div>
+    
+    <!-- Display Area for Row 4 -->
+    <div class="display-area" id="display-row1">
+        <img id="row6-main-image" src="" alt="">
+        <img id="row6-bedroom-image" src="" alt="">
+        <img id="row6-bathroom-image" src="" alt="">
+        <img id="row6-livingroom-image" src="" alt="">
+    </div>
+        <script src=".vscode/Js/propert.js"></script>
+<section class="main" id="main">
+<form action="">
+    <h3>Find your perfect home</h3>
+    <div class="inputBox">
+        <input type="search" name="" placeholder="Location" id="">
+        <input type="search" name="" placeholder="city" id="">
+        <select name="" id="">
+            <option value=""disabled hidden selected>minimum price</option>
+            <option value="$900">$900</option>
+            <option value="$900">$799</option>
+            <option value="$900">$500</option>
+            <option value="$900">$499</option>
+            <option value="$900">$700</option>
+            <option value="$900">$900</option>
+            <option value="$900">$799</option>
+            <option value="$900">$500</option>
+            <option value="$900">$499</option>
+            <option value="$900">$700</option>
+        </select>
+        <select name="" id="">
+            <option value=""disabled hidden selected>maximum price</option>
+            <option value="$900">$1000</option>
+            <option value="$900">$3000</option>
+            <option value="$900">$5000</option>
+            <option value="$900">$6900</option>
+            <option value="$900">$11000</option>
+            <option value="$900">$1000</option>
+            <option value="$900">$3000</option>
+            <option value="$900">$5000</option>
+            <option value="$900">$6900</option>
+        </select>
+        <select name="" id="">
+            <option value=""disabled hidden selected>property status</option>
+            <option value="Ready To Move">Ready To Move</option>
+            <option value="under construction">under constraction</option>
+            <option value="Furnished">furnished</option>
+            <option value="Semi-Furnished">Sumi-Furnished</option>
+            
+        </select>
+        <select name="" id="">
+            <option value=""disabled hidden selected>property Type</option>
+            <option value="Shop">Shop</option>
+            <option value="Flat">Flat</option>
+            <option value="House">House</option>
+            <option value="Land">Land</option>
+            <option value="Warehouse">Warehouse</option>
+        </select>
+        <select name="" id="">
+            <option value=""disabled hidden selected>BHK</option>
+            <option value="1 BHK">1 BHK</option>
+            <option value="2 BHK">2 BHK</option>
+            <option value="3 BHK">3 BHK</option>
+            <option value="4 BHK">4 BHK</option>
+            <option value="5 BHK">5 BHK</option>
+            <option value="6 BHK">6 BHK</option>
+        </select>
+        <select name="" id="">
+            <option value=""disabled hidden selected>aminities</option>
+            
+            <option value="Parking space">Parking space</option>
+            <option value="Swimming pools">Swimming pool</option>
+            <option value="Security">Security</option>
+            <option value="Playground">Playground</option>
+            <option value="All">All</option>
+        </select>
+        <select name="" id="">
+            <option value=""disabled hidden selected>Bedrooms</option>
+            <option value="1 bedroom">1 bedroom</option>
+            <option value="2 bedroom">2 bedrooms</option>
+            <option value="3 bedroom">3 bedroom</option>
+            <option value="4 bedroom">4 bedrooom</option>
+            <option value="5 bedroom">5 bedrooom</option>
+            
+        </select>
+        <select name="" id="">
+            <option value=""disabled hidden selected>Bathrooms</option>
+            <option value="1 bathroom">1 bathroom</option>
+            <option value="2 bathroom">2 bathrooms</option>
+            <option value="3 bathroom">3 bathroom</option>
+            <option value="4 bathroom">4 bathrooom</option>
+            <option value="5 batroom">5 bathrooom</option>
+           
+        </select>
+    </div>
+    <input type="submit" value="Serach Propperty" class="btn">
+</form>
+</section>
 </body>
 </html>
 

@@ -59,46 +59,171 @@ h1 {
 }
 
 /* Property Grid */
-.property {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 20px;
-    padding: 20px;
+.property-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px; /* Adds spacing between rows */
+    
 }
+
 
 .property-item {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    width: 18%;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    
 }
-.property-item:hover{
+.property-item:hover {
     transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .property-item img {
     width: 100%;
-    height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.property-item img:hover
-{
-    transform: scale(1.06);
+
+.property-item img:hover {
+    transform: scale(1.1);
+    }
+    .property-item h2 {
+        font-size: 1.25em;
+        color: rgba(0, 0, 0, 0.747);
+        margin-top: 10px;
+
+    }
+    
+    .property-item p {
+        font-size: 0.8em;
+        color: #666666e3;
+        margin: 5px 0;
+
+    }
+
+.display-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    border: 2px solid #ccc;
+    padding: 10px;
+    }
+
+.display-area img {
+    width:24%;
+    height: auto;
+    border-radius: 10px;
+}
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.property-item h2 {
-    font-size: 1.25em;
-    color: rgba(0, 0, 0, 0.747);
+button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: scale(0.95);
+}
+/* Style the icons */
+.like-icon {
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease-in-out;
+}
+
+.like-icon:hover {
+    color: red;
+}
+
+.fa-thumbs-up:hover {
+    color: blue;
+}
+
+
+.main {
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
     margin-top: 10px;
 }
 
-.property-item p {
-    font-size: 1em;
-    color: #666666e3;
-    margin: 5px 0;
+/* Centering the Form */
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.inputBox {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    border-radius: 30px;
+    border: 30px solid rgba(0, 128, 0, 0.692);
+}
+
+input[type="search"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
 
 /* Larger Screens (Laptops and desktops) */
@@ -121,6 +246,10 @@ h1 {
 
     .property-item {
         padding: 20px;
+    }
+
+    .main {
+        max-width: 850px;
     }
 }
 
@@ -148,9 +277,10 @@ h1 {
     }
 
     .property-item {
-        max-width: 300px; /* Limit width of property cards */
+        max-width: 300px;
         padding: 25px;
     }
+    
 
     .property-item h2 {
         font-size: 1.5em;
@@ -158,6 +288,10 @@ h1 {
 
     .property-item p {
         font-size: 1.1em;
+    }
+
+    .main {
+        max-width: 900px;
     }
 }
 
@@ -196,7 +330,12 @@ h1 {
     }
 
     .property-item p {
-        font-size: 1em;
+        font-size: 0.6em;
+    }
+
+    .main {
+        max-width: 90%;
+        padding: 20px;
     }
 }
 
@@ -222,15 +361,28 @@ h1 {
 
     .property-item {
         padding: 10px;
-       
     }
-    
 
     .property-item h2 {
         font-size: 1em;
     }
 
     .property-item p {
-        font-size: 0.9em;
+        font-size: 0.7em;
+    }
+
+    .main {
+        max-width: 95%;
+        padding: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,418 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f8f9fa; */
+    /* background: url(../image/office-building-modern-business-center_42691-253.jpg);
+  background-size: cover; */
+  background: url(../image/social5.jfif);
+  /* background-size: cover; */
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  /* background-color:orange; */
+  background-color:cyan;
+}
+
+.navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.navbar-list .logo {
+  width: 150px; 
+  border-radius: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-list .logo:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 25px;
+  
+  transition: color 0.5s ease;
+}
+
+.navbar-list a:hover {
+  color: #00bcd4;
+}
+
+
+/* Contact Section */
+.contact-section {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background: orange; */
+    background-color:cyan;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Call Button */
+.call-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.call-button i {
+    margin-right: 5px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: scale(0.95);
+}
+/* button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+} */
+/* button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+} */
+
+/* Agents Section */
+.agents-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background: orange; */
+    background-color:cyan;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Agent Container */
+.agents-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Individual Agent */
+.agent {
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agent:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.agent img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    color: #007bff;
+}
+footer{
+    background-color:cyan;
+    width: 100%;
+   
+}
+
+ ul {
+    text-decoration: none;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  
+  .footer__col {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+  }
+  .footer__col ul  a{
+    text-decoration: none;
+  }
+  .footer__col a:hover{
+    color: orange;
+
+  }
+  .footer__logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .footer__socials {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+  }
+  .footer__socials a:hover{
+    color: red;
+    transform: scale(2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer__bar {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+/* Responsive Design for Different Devices */
+
+/* Larger Screens (Laptops and desktops) */
+@media (min-width: 1024px) {
+    body {
+        padding: 0.5px; 
+    }
+
+    .navbar-list a {
+        font-size: 1.2em;
+    }
+
+  
+}
+
+/* Extra-Large Screens (13-inch to 16-inch and Above) */
+@media (min-width: 1440px) {
+    body {
+        padding: 0.5px; 
+    }
+
+    .navbar {
+        padding: 20px 50px;
+    }
+
+    .navbar-list {
+        gap: 30px;
+    }
+}
+
+/* Tablets (Width: 768px or Smaller) */
+@media (max-width: 768px) {
+    body {
+        padding:0.5px;
+    }
+ .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-list {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .navbar-list .logo {
+        width: 130px;
+        margin-bottom: 15px;
+    }
+    .contact-section {
+      max-width: 85%;
+      padding: 10px;
+  }
+
+  .call-button {
+      font-size: 14px;
+      padding: 8px;
+      width: 100%;
+  }
+
+  .contact-info p {
+      font-size: 12px;
+  }
+  #message{
+    max-width: 98% ;
+  }
+
+  .agents-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .agent {
+      width: 100%;
+      max-width: 250px;
+  }
+
+}
+
+/* Mobile Phones (Width: 480px or Smaller) */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5px;
+    }
+
+    .navbar-list a {
+        font-size: 14px; 
+        padding: 8px;
+    }
+    .contact-section h1 {
+      font-size: 18px;
+      text-align: center;
+  }
+
+  .call-button {
+      font-size: 14px;
+      padding: 12px;
+  }
+
+  .agent img {
+      width: 80px;
+      height: 80px;
+  }
+  }
+
+@media (max-width: 1024px) {
+  .contact-section, .agents-section {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .contact-info p {
+      font-size: 14px;
+  }
+
+  .call-button {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .agents-container {
+      gap: 40px;
+  }
+
+  .agent {
+      width: 180px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-section h1 {
+      font-size: 16px;
+  }
+
+  .call-button {
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .agent img {
+      width: 70px;
+      height: 70px;
+  }
+}
+
+  

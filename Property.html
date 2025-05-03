@@ -18,11 +18,11 @@
                 <li><a href="About.html">About</a></li>
                 <li><a href="Service.html">Services</a></li>
                 <li><a href="#">Properties</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
     
-        <h1>Property Listings</h1>
+        <h1> Featured Property </h1>
     
     <!-- Row 1 -->
     <div class="property-row">
@@ -30,33 +30,45 @@
             <img src="image/download (4).jfif" alt="Luxury Apartment">
             <h2>Luxury Apartment</h2>
             <p>Price: $60,000</p>
-             <!-- <p>Bedrooms: 2</p> -->
-           
             <p>Modern living spaces and Swimming pool</p>
-            <p>Bedrooms: 4</p>
+            <p><i class="fa-solid fa-bed"></i>  4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath  <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
-                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
-                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+                <i class="fa-solid fa-heart like-icon"></i>
+                <i class="fa-solid fa-thumbs-up like-icon"></i>
             </p>
             
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row1', 'image/360_F_162064034_HI2YEgV7km3HMy0rccQczKH2vvpI4OnB.jpg', 'image/addtional_image/download (4).jfif', 'image/addtional_image/images (36).jfif', 'image/addtional_image/images (59).jfif')">
             <img src="image/360_F_162064034_HI2YEgV7km3HMy0rccQczKH2vvpI4OnB.jpg" alt="Family Home">
             <h2>Family Home</h2>
             <p>Price: $40,000</p>
-            
-            <!-- <p>Bedrooms: 4</p>
-            <p>Spacious homes tailored for families, with multiple bedrooms and large living areas.</p> -->
             <p>family homes with bedroom and living room,</p>
-            <p>Bedrooms: 4</p>
-            <p class="icon-container">
-                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
            
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <!-- <button onclick="buyProperty('Family Home', 40000)">Buy</button> -->
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row1', 'image/istockphoto-1150278004-612x612.jpg', 'image/addtional_image/download (6).jfif', 'image/addtional_image/images (31).jfif', 'image/addtional_image/images (61).jfif')">
@@ -64,12 +76,20 @@
             <h2>Investment Property</h2>
             <p>Price: $30,000</p>
             <p> Home for investment and organization</p>
-            <p>Bedrooms: 4</p>
-            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
             
         </div>
     
@@ -78,12 +98,20 @@
             <h2>Vacation Home</h2>
             <p>Price: $30,000</p>
             <p>Relaxing place and leisure-friendly areas.</p>
-            <p>Bedrooms: 4</p>
-            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     </div>
     
@@ -102,12 +130,20 @@
             <h2>Vacation house</h2>
             <p>Price: $30,000</p>
             <p> Relaxing place and leisure-friendly areas.</p>
-            <p>Bedrooms: 4</p>
-            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
              
         </div>
     
@@ -115,15 +151,23 @@
             <img src="image/istockphoto-1165384568-612x612.jpg" alt="Beachfront Home">
             <h2>Luxury Home</h2>
             <p>Price: $30,000</p>
-            <p> Home for investment</p>
+            <p> Modern living spaces and Swimming pool</p>
             <!-- <p>Bedrooms: 4</p> -->
             <p>Spacious homes tailored for families</p>
-            <p>Bedrooms: 4</p>
-            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row2', 'image/240_F_428739678_GvYgCSvj9fkmzzydtqKiAtfgCSZB2Io9.jpg', 'image/addtional_image/images (9).jfif', 'image/addtional_image/images (35).jfif', 'image/addtional_image/images (50).jfif')">
@@ -132,12 +176,20 @@
             <p>Price: $400,000</p>
             <!-- <p>Bedrooms: 4</p> -->
             <p>Spacious homes tailored for families</p>
-            <p>Bedrooms: 4</p>
-            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row2', 'image/240_F_57688175_PeIsD8zskMwobbM0NIVMIII0nRegWsal.jpg', 'image/addtional_image/images (10).jfif', 'image/addtional_image/images (36).jfif', 'image/addtional_image/images (51).jfif')">
@@ -146,12 +198,20 @@
             <p>Price: $400,000</p>
            
             <p>Spacious homes tailored for families</p>
-            <p>Bedrooms: 4</p>
-            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     </div>
     
@@ -167,53 +227,88 @@
         <div class="property-item" onclick="displayImages('row3', 'image/images (3).jfif', 'image/addtional_image/images (11).jfif', 'image/addtional_image/images (37).jfif', 'image/addtional_image/images (53).jfif')">
             <img src="image/images (3).jfif" alt="Luxury Apartment">
             <h2>Luxury Apartment</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
-            <p class="icon-container">
+            <p>Price: $56,000</p>
+            <p> Modern living spaces and Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
-        </div>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
+                </div>
     
         <div class="property-item" onclick="displayImages('row3', 'image/images (5).jfif', 'image/addtional_image/images (12).jfif', 'image/addtional_image/images (38).jfif', 'image/addtional_image/images (54).jfif')">
             <img src="image/images (5).jfif" alt="Family Home">
             <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $44,000</p>
+            <p> Modern living spaces and Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
-        </div>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
+                </div>
     
         <div class="property-item" onclick="displayImages('row3', 'image/images (2).jfif', 'image/addtional_image/images (13).jfif', 'image/addtional_image/images (39).jfif', 'image/addtional_image/images (56).jfif')">
             <img src="image/images (2).jfif" alt="Investment Property">
             <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $29,000</p>
+            <p>Modern living spaces and Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row3', 'image/download (1).jfif', 'image/addtional_image/images (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (57).jfif')">
             <img src="image/download (1).jfif" alt="Modern Villa">
             <h2>Modern Villa</h2>
             <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p> Modern Villa with bedrooms</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     </div>
     
@@ -230,12 +325,21 @@
             <h2>Luxury Apartment</h2>
             <p>Price: $30,000</p>
             <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-1141293839-612x612.jpg', 'image/addtional_image/images (17).jfif', 'image/addtional_image/images (46).jfif', 'image/addtional_image/images (61).jfif')">
@@ -243,12 +347,21 @@
             <h2>Luxury Home</h2>
             <p>Price: $30,000</p>
             <p> Home for investment </p>
-            <p>Bedrooms: 4</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-1322575582-612x612.jpg', 'image/addtional_image/images (18).jfif', 'image/addtional_image/images (47).jfif', 'image/addtional_image/images (56).jfif')">
@@ -256,12 +369,21 @@
             <h2>Luxury Home</h2>
             <p>Price: $30,000</p>
             <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-2155879454-612x612.jpg', 'image/addtional_image/images (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (57).jfif')">
@@ -269,12 +391,21 @@
             <h2>Modern Villa</h2>
             <p>Price: $30,000</p>
             <p> Home for investment and for organization</p>
-            <p>Bedrooms: 4</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     </div>
     
@@ -290,53 +421,89 @@
         <div class="property-item" onclick="displayImages('row5', 'image/images (13).jfif', 'image/download (18).jfif', 'image/download (13).jfif', 'image/images (21).jfif')">
             <img src="image/images (13).jfif" alt="Luxury Apartment">
             <h2>Hotell and Resturent</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $80,990</p>
+            <p> Home for Hotell and Resturent</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row5', 'image/istockphoto-2161773498-612x612.webp', 'image/istockphoto-1407156342-612x612.jpg', 'image/download (10).jfif', 'image/addtional_image/images (78).jfif')">
             <img src="image/istockphoto-2161773498-612x612.webp" alt="Family Home">
             <h2>Luxury Home</h2>
             <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p> Luxery Homes with parking area</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row5', 'image/image.png', 'image/download (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (76).jfif')">
             <img src="image/image.png" alt="Investment Property">
             <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $90,000</p>
+            <p>Luxery Homes with pools</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row5', 'image/istockphoto-176860161-612x612.jpg', 'image/addtional_image/images (20).jfif', 'image/addtional_image/images (40).jfif', 'image/images (25).jfif')">
             <img src="image/istockphoto-176860161-612x612.jpg" alt="Modern Villa">
             <h2>Modern Villa</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $45,000</p>
+            <p> Modern villa with swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     </div>
     
@@ -352,53 +519,89 @@
         <div class="property-item" onclick="displayImages('row6', 'image/istockphoto-1163919479-612x612.jpg', 'image/download (15).jfif', 'image/download (13).jfif', 'image/addtional_image/images (87).jfif')">
             <img src="image/istockphoto-1163919479-612x612.jpg" alt="Luxury Apartment">
             <h2>Luxury Apartment</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $66,000</p>
+            <p>Luxury Home with Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 30000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row6', 'image/misson-img.png', 'image/istockphoto-1328394896-612x612.jpg', 'image/addtional_image/images (43).jfif', 'image/addtional_image/images (61).jfif')">
             <img src="image/misson-img.png" alt="Family Home">
             <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $54,000</p>
+            <p>Luxury Home with Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row6', 'image/images (6).jfif', 'image/addtional_image/images (100).jfif', 'image/addtional_image/images (47).jfif', 'image/addtional_image/images (95).jfif')">
             <img src="image/images (6).jfif" alt="">
             <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $67,000</p>
+            <p>Luxury Home with Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     
         <div class="property-item" onclick="displayImages('row6', 'image/istockphoto-503044702-612x612.jpg', 'image/istockphoto-1407156342-612x612.jpg', 'image/addtional_image/images (37).jfif', 'image/addtional_image/images (96).jfif')">
             <img src="image/istockphoto-503044702-612x612.jpg" alt="Modern Villa">
             <h2>Modern Villa</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p>Bedrooms: 4</p>
+            <p>Price: $77,000</p>
+            <p> Modern Villa with Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
-            <button onclick="buyProperty('Family Home', 40000)">Buy</button>
+            <div class="action-container">
+                <button>Buy</button>
+            <!-- Comment Section -->
+                <div class="comment-section">
+                    <div id="comment-list"></div>
+                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
+                    <button class="post">Post Comment</button>
+                </div>
+            </div>
+            <button class="view">View Details</button>
         </div>
     </div>
     
@@ -409,7 +612,7 @@
         <img id="row6-bathroom-image" src="" alt="">
         <img id="row6-livingroom-image" src="" alt="">
     </div>
-        <script src=".vscode/Js/propert.js"></script>
+        <script src="property.js"></script>
 <section class="main" id="main">
 <form action="">
     <h3>Find your perfect home</h3>

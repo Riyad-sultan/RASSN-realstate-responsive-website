@@ -4,20 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    /* background: url(../image/services4.jpg); */
     /* background-color: rgba(95, 158, 160, 0.61); */
     background-size: cover;
 
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 20px;
-  /* background-color: #fff; */
-}
-
 .navbar-list {
   display: flex;
   flex-wrap: wrap;
@@ -25,53 +15,42 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .navbar-list .logo {
-  width: 150px; 
+  max-width: 100px;
   border-radius: 20px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.navbar-list .logo:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
 }
 
 .navbar-list a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.829);
   font-weight: bold;
-  padding: 5px 10px;
-  font-size: 25px;
   
+  padding: 5px 10px;
   transition: color 0.5s ease;
 }
 
 .navbar-list a:hover {
   color: #00bcd4;
 }
-  .main h1{
-    text-align: center;
-    font-size: 30px;
-    
-  }
-
   /* Styling for the Services Section */
 .services {
   text-align: center;
   padding: 20px;
   background-color: #f4f4f9;
+  /* background-color: rgba(95, 158, 160, 0.61); */
 }
-
+.services span{
+color: orange;
+}
 .services h1 {
-  font-size: 2em;
+  font-size: 40px;
   color: #333;
   margin-bottom: 20px;
 }
 
-/* Service Container */
 .service-container {
   display: flex;
   flex-wrap: wrap;
@@ -79,7 +58,6 @@ body{
   gap: 20px;
 }
 
-/* Individual Service Card */
 .service-card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -96,34 +74,14 @@ body{
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.service-card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
-
-.service-card h3 {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 10px;
-}
-
 .service-card p {
-  font-size: 1em;
+  font-size: 18px;
   color: #555;
   line-height: 1.6;
 }
-
-/* Icons (if used) */
+ /* Icon styling */
 .service-card i {
-  font-size: 2em;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-/* Updated Icon Styling */
-.service-card i {
-  font-size: 3em;
+  font-size: 50px;
   color:rgba(255, 68, 0, 0.74);
   margin-bottom: 15px; 
   transition: color 0.3s ease, transform 0.3s ease;
@@ -137,7 +95,7 @@ body{
 /* Service Image Section */
 .service-image {
   padding: 20px;
-  background: url(url../image/istockphoto-1217326577-612x612.jpg);
+  /* background-color: rgb(0, 195, 255); */
 }
 
 .service-image-container {
@@ -149,13 +107,13 @@ body{
 
 .service-image-ForRent,
 .service-image-ForSell {
-  width: 48%; /* Equal space for each section */
+  width: 48%;
   text-align: center;
 }
 
 .service-image-ForRent h1,
 .service-image-ForSell h1 {
-  font-size: 2em;
+  font-size: 40px;
   color: #333;
   margin-bottom: 15px;
 }
@@ -197,16 +155,27 @@ text-decoration: none;
 
 
   /* Responsive */
-  @media (max-width: 768px) {
-    .header-top {
-        flex-direction: column;
-        align-items: center;
-    }
+   /* Mobile Phones (Width: 480px or Smaller) */
+   @media (max-width: 480px) {
+    .navbar {
+      padding: 10px;
+  }
   
-    .header-top-list {
-        justify-content: center;
-        gap: 15px;
-    }
+  .navbar-list {
+      gap: 8px;
+  }
+  
+  .navbar-list .logo {
+      width: 150px; 
+  }
+  
+  .navbar-list a {
+      font-size: 14px; 
+      padding: 8px;
+  }
+  }
+  /* Responsibe For Tablet */
+  @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
       align-items: center;
@@ -226,48 +195,74 @@ text-decoration: none;
   .navbar-list a {
       font-size: 16px;
   }
-  .about-section {
-    flex-direction: column;
+}
+/* Responsive For display size between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-}
-.about-section img {
-    width: 80%;
-    margin-right: 0;
-    margin-bottom: 20px;
-}
-.about-section .text {
-    max-width: 90%; 
-    text-align: center; 
-    
-   
-}
-}
-  
-  /* Mobile Phones (Width: 480px or Smaller) */
-  @media (max-width: 480px) {
-    .header-top {
-        padding: 5px 10px;
-    }
-    .navbar {
-      padding: 10px;
   }
-  
+
   .navbar-list {
-      gap: 8px;
-  }
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+    margin-top: 20px;
   
+  }
+
   .navbar-list .logo {
-      width: 150px; 
+    width: 180px;
+    margin-bottom: 0;
   }
-  
+
   .navbar-list a {
-      font-size: 14px; 
-      padding: 8px;
+    font-size: 24px;
   }
-  .about-section img {
-    width: 100%;
+
 }
-.about-section .text {
-    max-width: 100%; 
-}
+
+
+/* For Extra Large Screens (Width: 1200px or Larger) */
+@media (min-width: 1200px) {
+  .navbar {
+      justify-content: space-between;
+      max-width: 1200px;
+      padding: 20px;
   }
+
+  .navbar-list {
+      flex-direction: row;
+      gap: 30px; 
+  }
+
+  .navbar-list .logo {
+      width: 100px; 
+    
+  }
+
+  .navbar-list a {
+      font-size: 30px; 
+      padding: 10px 15px;
+  }
+}
+/* For Desktops (Width: 1024px or Larger) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .navbar {
+     justify-content: space-between;
+     max-width: 1024px;
+ }
+ .navbar-list{
+  margin-top: 20px;
+ }
+ .navbar-list a {
+  font-size: 29px;
+  padding: 18px 12px;
+}
+
+ .navbar-list .logo {
+     width: 300px; 
+ }
+
+}

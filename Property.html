@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property</title>
+    <title>The Dreamers-Property</title>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
@@ -19,34 +19,54 @@
                 <li><a href="Service.html">Services</a></li>
                 <li><a href="#">Properties</a></li>
                 <li><a href="Contact.html">Contact</a></li>
+                
             </ul>
+            <div class="social-icons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
         </nav>
     
-        <h1> Featured Property </h1>
-    
-    <!-- Row 1 -->
+        <h1> Featured Property</h1>
+         <!-- Row 1 -->
     <div class="property-row">
         <div class="property-item" onclick="displayImages('row1', 'image/download (4).jfif', 'image/addtional_image/download (5).jfif', 'image/addtional_image/images (29).jfif', 'image/images (25).jfif')">
             <img src="image/download (4).jfif" alt="Luxury Apartment">
             <h2>Luxury Apartment</h2>
             <p>Price: $60,000</p>
-            <p>Modern living spaces and Swimming pool</p>
-            <p><i class="fa-solid fa-bed"></i>  4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath  <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p>Modern living spaces and swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i>  5 Bed  <i class="fa-solid fa-bath"></i>    2 Bath  <i class="fa-solid fa-ruler-combined"></i>  898 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i>
                 <i class="fa-solid fa-thumbs-up like-icon"></i>
             </p>
             
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
+                
+
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+              <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
+                
             </div>
             <button class="view">View Details</button>
+<div class="details" style="display: none;">
+    <p><b>City:</b>BOLLE-BULBULA</p>
+    <p><b>Location:</b> Prestigious neighborhood, breathtaking views and secure gated community</p>
+    <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+    <p><b>Condition:</b> Brand New</p>
+    <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+</div>
         </div>
     
         <div class="property-item" onclick="displayImages('row1', 'image/360_F_162064034_HI2YEgV7km3HMy0rccQczKH2vvpI4OnB.jpg', 'image/addtional_image/download (4).jfif', 'image/addtional_image/images (36).jfif', 'image/addtional_image/images (59).jfif')">
@@ -54,64 +74,102 @@
             <h2>Family Home</h2>
             <p>Price: $40,000</p>
             <p>family homes with bedroom and living room,</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  684 sq ft</p>
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
             </p>
            
             <!-- <button onclick="buyProperty('Family Home', 40000)">Buy</button> -->
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+          <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
+
+            
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :CHINA-CAMP</b></p>
+                <p><b>Location:</b>Peaceful neighborhood, family-friendly community, easy access to schools, shops, and transport.</p>
+                <p><b>Amenities:</b> bedroom,  living room, functional kitchen and bathroom.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+          
         </div>
     
         <div class="property-item" onclick="displayImages('row1', 'image/istockphoto-1150278004-612x612.jpg', 'image/addtional_image/download (6).jfif', 'image/addtional_image/images (31).jfif', 'image/addtional_image/images (61).jfif')">
             <img src="image/istockphoto-1150278004-612x612.jpg" alt="Investment Property">
             <h2>Investment Property</h2>
-            <p>Price: $30,000</p>
+            <p>Price: $99,000</p>
             <p> Home for investment and organization</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 2 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  890 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+           <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
-            
+            <div class="details" style="display: none;">
+                <p><b>City :PIYASA</b></p>
+                <p><b>Location:</b> Prime getaway destination, peaceful surroundings, easy access to beaches, mountains, or resort areas.</p>
+                <p><b>Amenities:</b> High-demand area, excellent rental potential, close to commercial hubs, schools, and shopping centers.</p>
+                <p><b>Condition:</b> New-brand</p>
+                <p><b>Investment Benefits:</b> Passive income opportunities,flexible leasing options, and secure long-term ownership.</p> 
+            </div>
+
         </div>
     
         <div class="property-item" onclick="displayImages('row1', 'image/unnamed.jpg', 'image/addtional_image/download (2).jfif', 'image/addtional_image/download (13).jfif', 'image/addtional_image/images - 2025-04-24T105129.479.jfif')">
             <img src="image/unnamed.jpg" alt="Modern Villa">
             <h2>Vacation Home</h2>
-            <p>Price: $30,000</p>
+            <p>Price: $45,900</p>
             <p>Relaxing place and leisure-friendly areas.</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 6 Bed  <i class="fa-solid fa-bath"></i>    4 Bath <i class="fa-solid fa-ruler-combined"></i>  587 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+            <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :Shuro-Meda</b></p>
+                <p><b>Location:</b> Prime getaway destination, peaceful surroundings, easy access to beaches, mountains, or resort areas.</p>
+                <p><b>Amenities:</b> Scenic views, spacious bedrooms, cozy living areas, private pool, garden space, and modern furnishings.</p>
+                <p><b>Condition:</b> New-brand</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+           
         </div>
     </div>
     
@@ -128,68 +186,101 @@
         <div class="property-item" onclick="displayImages('row2', 'image/2022-12-05 (1).jpg', 'image/addtional_image/images (1).jfif', 'image/addtional_image/images (32).jfif', 'image/addtional_image/images - 2025-04-24T105023.529.jfif')">
             <img src="image/2022-12-05 (1).jpg" alt="Townhouse">
             <h2>Vacation house</h2>
-            <p>Price: $30,000</p>
+            <p>Price: $79,990</p>
             <p> Relaxing place and leisure-friendly areas.</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 5 Bed  <i class="fa-solid fa-bath"></i>    3 Bath <i class="fa-solid fa-ruler-combined"></i>  900 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
                 <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :Shuro-Meda</b></p>
+                <p><b>Location:</b> Prime getaway destination, peaceful surroundings, easy access to beaches, mountains, or resort areas.</p>
+                <p><b>Amenities:</b> Scenic views, spacious bedrooms, cozy living areas, private pool, garden space, and modern furnishings.</p>
+                <p><b>Condition:</b> New-brand</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
              
         </div>
     
         <div class="property-item" onclick="displayImages('row2', 'image/istockphoto-1165384568-612x612.jpg', 'image/addtional_image/images (4).jfif', 'image/addtional_image/images (35).jfif', 'image/addtional_image/images (55).jfif')">
             <img src="image/istockphoto-1165384568-612x612.jpg" alt="Beachfront Home">
             <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
+            <p>Price: $59,950</p>
             <p> Modern living spaces and Swimming pool</p>
             <!-- <p>Bedrooms: 4</p> -->
             <p>Spacious homes tailored for families</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  480 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+              <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+<div class="details" style="display: none;">
+    <p><b>City:</b>SAR-BET</p>
+    <p><b>Location:</b> Prestigious neighborhood, breathtaking views and secure gated community</p>
+    <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+    <p><b>Condition:</b> Brand New</p>
+    <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+</div>
+        
         </div>
     
         <div class="property-item" onclick="displayImages('row2', 'image/240_F_428739678_GvYgCSvj9fkmzzydtqKiAtfgCSZB2Io9.jpg', 'image/addtional_image/images (9).jfif', 'image/addtional_image/images (35).jfif', 'image/addtional_image/images (50).jfif')">
             <img src="image/240_F_428739678_GvYgCSvj9fkmzzydtqKiAtfgCSZB2Io9.jpg" alt="Penthouse">
             <h2>Family Homes</h2>
             <p>Price: $400,000</p>
-            <!-- <p>Bedrooms: 4</p> -->
             <p>Spacious homes tailored for families</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 3 Bed  <i class="fa-solid fa-bath"></i>    3 Bath <i class="fa-solid fa-ruler-combined"></i>  570 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+               <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :HAYLE-GARMENT</b></p>
+                <p><b>Location:</b>Peaceful neighborhood, family-friendly community, easy access to schools, shops, and transport.</p>
+                <p><b>Amenities:</b> bedroom,  living room, functional kitchen and bathroom.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
         </div>
     
         <div class="property-item" onclick="displayImages('row2', 'image/240_F_57688175_PeIsD8zskMwobbM0NIVMIII0nRegWsal.jpg', 'image/addtional_image/images (10).jfif', 'image/addtional_image/images (36).jfif', 'image/addtional_image/images (51).jfif')">
@@ -203,17 +294,28 @@
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+               <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :CHINA-CAMP</b></p>
+                <p><b>Location:</b>Peaceful neighborhood, family-friendly community, easy access to schools, shops, and transport.</p>
+                <p><b>Amenities:</b> bedroom,  living room, functional kitchen and bathroom.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+            </div>
         </div>
-    </div>
     
     <!-- Display Area for Row 2 -->
     <div class="display-area" id="display-row2">
@@ -223,243 +325,361 @@
         <img id="row2-livingroom-image" src="" alt="">
     </div>
     
+    <!-- Row 3 -->
     <div class="property-row">
         <div class="property-item" onclick="displayImages('row3', 'image/images (3).jfif', 'image/addtional_image/images (11).jfif', 'image/addtional_image/images (37).jfif', 'image/addtional_image/images (53).jfif')">
-            <img src="image/images (3).jfif" alt="Luxury Apartment">
-            <h2>Luxury Apartment</h2>
+            <img src="image/images (3).jfif" alt="Family Home">
+            <h2>Family Home</h2>
             <p>Price: $56,000</p>
             <p> Modern living spaces and Swimming pool</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>            <p class="icon-container">
+            <p><i class="fa-solid fa-bed"></i> 5 Bed  <i class="fa-solid fa-bath"></i>    3 Bath <i class="fa-solid fa-ruler-combined"></i>  9000 sq ft</p>            <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+             <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
-                </div>
+            <div class="details" style="display: none;">
+                <p><b>City :JAMO</b></p>
+                <p><b>Location:</b>Peaceful neighborhood, family-friendly community, easy access to schools, shops, and transport.</p>
+                <p><b>Amenities:</b> bedroom,  living room, functional kitchen and bathroom.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+        </div>
     
         <div class="property-item" onclick="displayImages('row3', 'image/images (5).jfif', 'image/addtional_image/images (12).jfif', 'image/addtional_image/images (38).jfif', 'image/addtional_image/images (54).jfif')">
             <img src="image/images (5).jfif" alt="Family Home">
             <h2>Luxury Home</h2>
             <p>Price: $44,000</p>
             <p> Modern living spaces and Swimming pool</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p><i class="fa-solid fa-bed"></i> 6 Bed  <i class="fa-solid fa-bath"></i>    4 Bath <i class="fa-solid fa-ruler-combined"></i>  700 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+              <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
-                </div>
+           <div class="details" style="display: none;">
+              <p><b>City:</b>AYER-TENA</p>
+              <p><b>Location:</b> Prestigious neighborhoodd, breathtaking views and secure gated community</p>
+              <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+              <p><b>Condition:</b> Brand New</p>
+              <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+        </div>
+      </div>
     
         <div class="property-item" onclick="displayImages('row3', 'image/images (2).jfif', 'image/addtional_image/images (13).jfif', 'image/addtional_image/images (39).jfif', 'image/addtional_image/images (56).jfif')">
             <img src="image/images (2).jfif" alt="Investment Property">
             <h2>Luxury Home</h2>
             <p>Price: $29,000</p>
             <p>Modern living spaces and Swimming pool</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  940 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+               <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City:</b>KALITY</p>
+                <p><b>Location:</b> Prestigious neighborhood, breathtaking views and secure gated community</p>
+                <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+                <p><b>Condition:</b> Brand New</p>
+                <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+            </div>
         </div>
     
         <div class="property-item" onclick="displayImages('row3', 'image/download (1).jfif', 'image/addtional_image/images (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (57).jfif')">
             <img src="image/download (1).jfif" alt="Modern Villa">
             <h2>Modern Villa</h2>
-            <p>Price: $30,000</p>
+            <p>Price: $44,700</p>
             <p> Modern Villa with bedrooms</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p><i class="fa-solid fa-bed"></i> 5 Bed  <i class="fa-solid fa-bath"></i>    3 Bath <i class="fa-solid fa-ruler-combined"></i>  800 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+              <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :MEKSIKO</b></p>
+                <p><b>Location:</b>Prime neighborhood, stunning views and secure gated community.</p>
+                <p><b>Amenities:</b>bedrooms, sleek living areas,bathrooms,Swimming pool,parking and home automation system.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+            </div>
+            
         </div>
     </div>
     
-    <!-- Display Area for Row 4 -->
+    <!-- Display Area for Row 3 -->
     <div class="display-area" id="display-row 4">
         <img id="row3-main-image" src="" alt="">
         <img id="row3-bedroom-image" src="" alt="">
         <img id="row3-bathroom-image" src="" alt="">
         <img id="row3-livingroom-image" src="" alt="">
     </div>
+    <!-- Row 4 -->
     <div class="property-row">
         <div class="property-item" onclick="displayImages('row4', 'image/images (8).jfif', 'image/addtional_image/images (16).jfif', 'image/addtional_image/images (42).jfif', 'image/addtional_image/images (53).jfif')">
             <img src="image/images (8).jfif" alt="Luxury Apartment">
             <h2>Luxury Apartment</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p>Price: $48,000</p>
+            <p>Luxery Home with best area</p>
+            <p><i class="fa-solid fa-bed"></i> 5 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  650 sq ft</p>
             <p class="icon-container">
-                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
-                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+                <i class="fa-solid fa-heart like-icon"></i>
+                <i class="fa-solid fa-thumbs-up like-icon"></i> 
             </p>
             <div class="action-container">
-                <button>Buy</button>
-            <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+                <button class="buy-button">Buy</button>
+            <!-- comment section -->
+              <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City:</b>Arat-Killo</p>
+                <p><b>Location:</b> Prestigious neighborhood, breathtaking views and secure gated community</p>
+                <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+                <p><b>Condition:</b> Brand New</p>
+                <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+            </div>
+           
         </div>
     
         <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-1141293839-612x612.jpg', 'image/addtional_image/images (17).jfif', 'image/addtional_image/images (46).jfif', 'image/addtional_image/images (61).jfif')">
             <img src="image/istockphoto-1141293839-612x612.jpg" alt="Family Home">
             <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment </p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p>Price: $87,200</p>
+            <p>Luxery Homes with swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 3 Bed  <i class="fa-solid fa-bath"></i>    3 Bath <i class="fa-solid fa-ruler-combined"></i>  999 sq ft</p>
             <p class="icon-container">
-                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
-                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+                <i class="fa-solid fa-heart like-icon"></i> 
+                <i class="fa-solid fa-thumbs-up like-icon"></i> 
             </p>
             <div class="action-container">
-                <button>Buy</button>
-            <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+                <button class="buy-button">Buy</button>
+           <!-- comment section -->
+               <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City:</b>TOR-HAYLOCH</p>
+                <p><b>Location:</b> Prestigious neighborhood, breathtaking views and secure gated community</p>
+                <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+                <p><b>Condition:</b> Brand New</p>
+                <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+            </div>
+            
         </div>
-    
-        <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-1322575582-612x612.jpg', 'image/addtional_image/images (18).jfif', 'image/addtional_image/images (47).jfif', 'image/addtional_image/images (56).jfif')">
-            <img src="image/istockphoto-1322575582-612x612.jpg" alt="Investment Property">
-            <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+        <div div class="property-item" onclick="displayImages('row4', 'image/istockphoto-1322575582-612x612.jpg', 'image/addtional_image/images (18).jfif', 'image/addtional_image/images (47).jfif', 'image/addtional_image/images (56).jfif')">
+            <img src="image/istockphoto-1322575582-612x612.jpg" alt="Family Home">
+            <h2>Family Home</h2>
+            <p>Price: $99,000</p>
+            <p>Family Homes with parking</p>
+            <p><i class="fa-solid fa-bed"></i> 6 Bed  <i class="fa-solid fa-bath"></i>    5 Bath <i class="fa-solid fa-ruler-combined"></i>  899 sq ft</p>
             <p class="icon-container">
-                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
-                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+                <i class="fa-solid fa-heart like-icon"></i> 
+                <i class="fa-solid fa-thumbs-up like-icon"></i> 
             </p>
             <div class="action-container">
-                <button>Buy</button>
-            <!-- Comment Section -->
+                <button class="buy-button">Buy</button>
+           <!-- comment section -->
                 <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
-        </div>
+            <div class="details" style="display: none;">
+                <p><b>City :KERANIYO</b></p>
+                <p><b>Location:</b>Peaceful neighborhood, family-friendly community, easy access to schools, shops, and transport.</p>
+                <p><b>Amenities:</b> bedroom,  living room, functional kitchen and bathroom.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+            </div>
     
-        <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-2155879454-612x612.jpg', 'image/addtional_image/images (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (57).jfif')">
+            <div class="property-item" onclick="displayImages('row4', 'image/istockphoto-2155879454-612x612.jpg', 'image/addtional_image/images (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (57).jfif')">
             <img src="image/istockphoto-2155879454-612x612.jpg" alt="Modern Villa">
             <h2>Modern Villa</h2>
-            <p>Price: $30,000</p>
-            <p> Home for investment and for organization</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p>Price: $66,000</p>
+            <p>Modern Villa with smart area</p>
+            <p><i class="fa-solid fa-bed"></i>  6 Bed  <i class="fa-solid fa-bath"></i>    4 Bath <i class="fa-solid fa-ruler-combined"></i>  599 sq ft</p>
             <p class="icon-container">
-                <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
-                <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
+                <i class="fa-solid fa-heart like-icon"></i> 
+                <i class="fa-solid fa-thumbs-up like-icon"></i> 
             </p>
             <div class="action-container">
-                <button>Buy</button>
-            <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+                <button class="buy-button">Buy</button>
+                <!-- comment section -->
+              <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :Arat-Killo</b></p>
+                <p><b>Location:</b>Prime neighborhood, stunning views and secure gated community.</p>
+                <p><b>Amenities:</b>bedrooms, sleek living areas,bathrooms,Swimming pool,parking and home automation system.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+            </div>
+
         </div>
     </div>
     
-    <!-- Display Area for Row 4 -->
+        <!-- Display area for row 4 -->
     <div class="display-area" id="display-row1">
         <img id="row4-main-image" src="" alt="">
         <img id="row4-bedroom-image" src="" alt="">
         <img id="row4-bathroom-image" src="" alt="">
         <img id="row4-livingroom-image" src="" alt="">
     </div>
-
+    <!-- Row 5 -->
     <div class="property-row">
         <div class="property-item" onclick="displayImages('row5', 'image/images (13).jfif', 'image/download (18).jfif', 'image/download (13).jfif', 'image/images (21).jfif')">
             <img src="image/images (13).jfif" alt="Luxury Apartment">
             <h2>Hotell and Resturent</h2>
             <p>Price: $80,990</p>
             <p> Home for Hotell and Resturent</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p><i class="fa-solid fa-bed"></i> 9 Bed  <i class="fa-solid fa-bath"></i>    6 Bath <i class="fa-solid fa-ruler-combined"></i>  890 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+               <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :ORAEAL</b></p>
+                <p><b>Location:</b>Prime neighborhood, stunning views and secure gated community.</p>
+                <p><b>Amenities:</b>bedrooms, sleek living areas,bathrooms,Swimming pool,parking and home automation system.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
         </div>
     
         <div class="property-item" onclick="displayImages('row5', 'image/istockphoto-2161773498-612x612.webp', 'image/istockphoto-1407156342-612x612.jpg', 'image/download (10).jfif', 'image/addtional_image/images (78).jfif')">
             <img src="image/istockphoto-2161773498-612x612.webp" alt="Family Home">
             <h2>Luxury Home</h2>
-            <p>Price: $30,000</p>
+            <p>Price: $99,999</p>
             <p> Luxery Homes with parking area</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p><i class="fa-solid fa-bed"></i> 5 Bed  <i class="fa-solid fa-bath"></i>    3 Bath <i class="fa-solid fa-ruler-combined"></i>  687 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
                 <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City:</b>Alem-Bank</p>
+                <p><b>Location:</b> Prestigious neighborhood, breathtaking views and secure gated community</p>
+                <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+                <p><b>Condition:</b> Brand New</p>
+                <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+            </div>
+           
         </div>
     
         <div class="property-item" onclick="displayImages('row5', 'image/image.png', 'image/download (14).jfif', 'image/addtional_image/images (40).jfif', 'image/addtional_image/images (76).jfif')">
@@ -467,21 +687,33 @@
             <h2>Luxury Home</h2>
             <p>Price: $90,000</p>
             <p>Luxery Homes with pools</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  788 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
                 <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City:</b>PIYASA</p>
+                <p><b>Location:</b> Prestigious neighborhood, breathtaking views and secure gated community</p>
+                <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+                <p><b>Condition:</b> Brand New</p>
+                <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+            </div>
+         
         </div>
     
         <div class="property-item" onclick="displayImages('row5', 'image/istockphoto-176860161-612x612.jpg', 'image/addtional_image/images (20).jfif', 'image/addtional_image/images (40).jfif', 'image/images (25).jfif')">
@@ -489,21 +721,33 @@
             <h2>Modern Villa</h2>
             <p>Price: $45,000</p>
             <p> Modern villa with swimming pool</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  945 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
                 <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
+            <div class="details" style="display: none;">
+                <p><b>City :Bsrate-Gebrel</b></p>
+                <p><b>Location:</b>Prime neighborhood, stunning views and secure gated community.</p>
+                <p><b>Amenities:</b>bedrooms, sleek living areas,bathrooms,Swimming pool,parking and home automation system.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+            </div>
         </div>
     </div>
     
@@ -514,52 +758,73 @@
         <img id="row5-bathroom-image" src="" alt="">
         <img id="row5-livingroom-image" src="" alt="">
     </div>
-
+    <!-- Row 6 -->
     <div class="property-row">
         <div class="property-item" onclick="displayImages('row6', 'image/istockphoto-1163919479-612x612.jpg', 'image/download (15).jfif', 'image/download (13).jfif', 'image/addtional_image/images (87).jfif')">
-            <img src="image/istockphoto-1163919479-612x612.jpg" alt="Luxury Apartment">
-            <h2>Luxury Apartment</h2>
+            <img src="image/istockphoto-1163919479-612x612.jpg" alt="Family home">
+            <h2>family Home</h2>
             <p>Price: $66,000</p>
-            <p>Luxury Home with Swimming pool</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p>Family Home with Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 8 Bed  <i class="fa-solid fa-bath"></i>    3 Bath <i class="fa-solid fa-ruler-combined"></i>  875 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+               <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
-        </div>
+            <div class="details" style="display: none;">
+                <p><b>City :Bsrate-Gebrel</b></p>
+                <p><b>Location:</b>Peaceful neighborhood, family-friendly community, easy access to schools, shops, and transport.</p>
+                <p><b>Amenities:</b> bedroom,  living room, functional kitchen and bathroom.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+            </div>
     
         <div class="property-item" onclick="displayImages('row6', 'image/misson-img.png', 'image/istockphoto-1328394896-612x612.jpg', 'image/addtional_image/images (43).jfif', 'image/addtional_image/images (61).jfif')">
             <img src="image/misson-img.png" alt="Family Home">
-            <h2>Luxury Home</h2>
+            <h2>Family Home</h2>
             <p>Price: $54,000</p>
-            <p>Luxury Home with Swimming pool</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p>family Home with Swimming pool</p>
+            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  699 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
                 <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
+            </div>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
             </div>
             <button class="view">View Details</button>
-        </div>
-    
+            <div class="details" style="display: none;">
+                <p><b>City :BETELL</b></p>
+                <p><b>Location:</b>Peaceful neighborhood, family-friendly community, easy access to schools, shops, and transport.</p>
+                <p><b>Amenities:</b> bedroom,  living room, functional kitchen and bathroom.</p>
+                <p><b>Condition:</b> modern finishes</p>
+                <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+            </div>
+            </div>
         <div class="property-item" onclick="displayImages('row6', 'image/images (6).jfif', 'image/addtional_image/images (100).jfif', 'image/addtional_image/images (47).jfif', 'image/addtional_image/images (95).jfif')">
             <img src="image/images (6).jfif" alt="">
             <h2>Luxury Home</h2>
@@ -571,15 +836,28 @@
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
                 <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
             </div>
-            <button class="view">View Details</button>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
+        </div>
+            </div>
+   <button class="view">View Details</button>
+                     <div class="details" style="display: none;">
+            <p><b>City:</b>MKENISA</p>
+            <p><b>Location:</b> Prestigious neighborhood, breathtaking views and secure gated community</p>
+            <p><b>Amenities:</b> Expansive bedrooms, elegant living spaces, spa-like bathrooms,smart home technology,parking,swimming pool and fitness center.</p>
+            <p><b>Condition:</b> Brand New</p>
+            <p><b>Purchasing Options:</b>Tailored payment plans and Full payment ensures immediate ownership</p>
+    </div>
+
+           
         </div>
     
         <div class="property-item" onclick="displayImages('row6', 'image/istockphoto-503044702-612x612.jpg', 'image/istockphoto-1407156342-612x612.jpg', 'image/addtional_image/images (37).jfif', 'image/addtional_image/images (96).jfif')">
@@ -587,64 +865,80 @@
             <h2>Modern Villa</h2>
             <p>Price: $77,000</p>
             <p> Modern Villa with Swimming pool</p>
-            <p><i class="fa-solid fa-bed"></i> 4 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  300 sq ft</p>
+            <p><i class="fa-solid fa-bed"></i> 5 Bed  <i class="fa-solid fa-bath"></i>    2 Bath <i class="fa-solid fa-ruler-combined"></i>  678 sq ft</p>
             <p class="icon-container">
                 <i class="fa-solid fa-heart like-icon"></i> <!-- Love Icon -->
                 <i class="fa-solid fa-thumbs-up like-icon"></i> <!-- Like Icon -->
             </p>
             <div class="action-container">
-                <button>Buy</button>
+                <button class="buy-button">Buy</button>
             <!-- Comment Section -->
-                <div class="comment-section">
-                    <div id="comment-list"></div>
-                    <textarea id="comment-input" placeholder="Write your comment..."></textarea>
-                    <button class="post">Post Comment</button>
-                </div>
+                   <div class="comment-section">
+            <div class="comment-container">
+                <div class="latest-comment"></div>
+                <button class="view-all-btn" style="display: none;">View All</button>
+                <button class="back-to-latest-btn" style="display: none;">Back to Latest</button>
             </div>
-            <button class="view">View Details</button>
+            <textarea class="comment-input" placeholder="Write your comment..."></textarea>
+            <button class="post-btn">Post Comment</button>
         </div>
-    </div>
+           </div>
+            <button class="view">View Details</button>
+           <div class="details" style="display: none;">
+           <p><b>City :ORAEAL</b></p>
+           <p><b>Location:</b>Prime neighborhood, stunning views and secure gated community.</p>
+           <p><b>Amenities:</b>bedrooms, sleek living areas,bathrooms,Swimming pool,parking and home automation system.</p>
+           <p><b>Condition:</b> modern finishes</p>
+         <p><b>Purchasing options:</b>Flexible payment plans, legal documentation, and secure ownership process.</p> 
+       </div>
+</div>
+        </div>
     
-    <!-- Display Area for Row 4 -->
+    <!-- Display Area for Row 6 -->
     <div class="display-area" id="display-row1">
         <img id="row6-main-image" src="" alt="">
         <img id="row6-bedroom-image" src="" alt="">
         <img id="row6-bathroom-image" src="" alt="">
         <img id="row6-livingroom-image" src="" alt="">
     </div>
-        <script src="property.js"></script>
-<section class="main" id="main">
+       
+<section class="main">
 <form action="">
-    <h3>Find your perfect home</h3>
+    <h3><span>FIND</span> YOUR <span>PERFECT</span> HOME</h3>
     <div class="inputBox">
-        <input type="search" name="" placeholder="Location" id="">
-        <input type="search" name="" placeholder="city" id="">
-        <select name="" id="">
+        <input type="search" placeholder="Location">
+        <input type="search" placeholder="city">
+        <select>
             <option value=""disabled hidden selected>minimum price</option>
             <option value="$900">$900</option>
-            <option value="$900">$799</option>
-            <option value="$900">$500</option>
-            <option value="$900">$499</option>
-            <option value="$900">$700</option>
+            <option value="$799">$799</option>
+            <option value="$500">$500</option>
+            <option value="$499">$499</option>
+            <option value="$700">$700</option>
             <option value="$900">$900</option>
-            <option value="$900">$799</option>
-            <option value="$900">$500</option>
-            <option value="$900">$499</option>
-            <option value="$900">$700</option>
+            <option value="$799">$799</option>
+            <option value="$300">$300</option>
+            <option value="$648">$648</option>
+            <option value="$700">$700</option>
+            <option value="$850">$850</option>
         </select>
-        <select name="" id="">
+        <select>
             <option value=""disabled hidden selected>maximum price</option>
-            <option value="$900">$1000</option>
-            <option value="$900">$3000</option>
-            <option value="$900">$5000</option>
-            <option value="$900">$6900</option>
-            <option value="$900">$11000</option>
-            <option value="$900">$1000</option>
-            <option value="$900">$3000</option>
-            <option value="$900">$5000</option>
-            <option value="$900">$6900</option>
+            <option value="10,000">$10,000</option>
+            <option value="$30,000">$30,000</option>
+            <option value="$5000">$5000</option>
+            <option value="$6900">$6900</option>
+            <option value="$11,000">$11,000</option>
+            <option value="$1000">$1000</option>
+            <option value="$20,000">$20,000</option>
+            <option value="$50,000">$50,000</option>
+            <option value="$7,900">$7,900</option>
+            <option value="$9,900">$9,900</option>
+            <option value="$12,900">$12,900</option>
+            <option value="$30,900">$30,900</option>
+            <option value="$40,900">$40,900</option>
         </select>
-        <select name="" id="">
+        <select>
             <option value=""disabled hidden selected>property status</option>
             <option value="Ready To Move">Ready To Move</option>
             <option value="under construction">under constraction</option>
@@ -652,7 +946,7 @@
             <option value="Semi-Furnished">Sumi-Furnished</option>
             
         </select>
-        <select name="" id="">
+        <select>
             <option value=""disabled hidden selected>property Type</option>
             <option value="Shop">Shop</option>
             <option value="Flat">Flat</option>
@@ -660,16 +954,16 @@
             <option value="Land">Land</option>
             <option value="Warehouse">Warehouse</option>
         </select>
-        <select name="" id="">
-            <option value=""disabled hidden selected>BHK</option>
-            <option value="1 BHK">1 BHK</option>
-            <option value="2 BHK">2 BHK</option>
-            <option value="3 BHK">3 BHK</option>
-            <option value="4 BHK">4 BHK</option>
-            <option value="5 BHK">5 BHK</option>
-            <option value="6 BHK">6 BHK</option>
+        <select>
+            <option value=""disabled hidden selected>Hall and kichn</option>
+            <option value="1 BHK">1 Hk</option>
+            <option value="2 BHK">2 HK</option>
+            <option value="3 BHK">3 HK</option>
+            <option value="4 BHK">4 HK</option>
+            <option value="5 BHK">5 HK</option>
+            <option value="6 BHK">6 HK</option>
         </select>
-        <select name="" id="">
+        <select>
             <option value=""disabled hidden selected>aminities</option>
             
             <option value="Parking space">Parking space</option>
@@ -678,28 +972,31 @@
             <option value="Playground">Playground</option>
             <option value="All">All</option>
         </select>
-        <select name="" id="">
+        <select>
             <option value=""disabled hidden selected>Bedrooms</option>
             <option value="1 bedroom">1 bedroom</option>
-            <option value="2 bedroom">2 bedrooms</option>
+            <option value="2 bedroom">2 bedroom</option>
             <option value="3 bedroom">3 bedroom</option>
             <option value="4 bedroom">4 bedrooom</option>
             <option value="5 bedroom">5 bedrooom</option>
             
         </select>
-        <select name="" id="">
+        <select>
             <option value=""disabled hidden selected>Bathrooms</option>
             <option value="1 bathroom">1 bathroom</option>
-            <option value="2 bathroom">2 bathrooms</option>
+            <option value="2 bathroom">2 bathroom</option>
             <option value="3 bathroom">3 bathroom</option>
             <option value="4 bathroom">4 bathrooom</option>
             <option value="5 batroom">5 bathrooom</option>
-           
+            <option value="5 batroom">6 bathrooom</option>
+            <option value="5 batroom">7 bathrooom</option>
+            <option value="5 batroom">8 bathrooom</option>  
         </select>
     </div>
     <input type="submit" value="Serach Propperty" class="btn">
 </form>
 </section>
+ <script src=".vscode/Js/propert.js"></script>
 </body>
 </html>
 

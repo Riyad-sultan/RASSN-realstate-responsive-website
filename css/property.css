@@ -28,15 +28,15 @@ body {
 }
 
 .navbar-list .logo {
-    width: 150px; 
+    width: 100px; 
     border-radius: 20px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* transition: transform 0.3s ease, opacity 0.3s ease; */
 }
 
-.navbar-list .logo:hover {
+/* .navbar-list .logo:hover {
     transform: scale(1.1);
     opacity: 0.8;
-}
+} */
 
 .navbar-list a {
     text-decoration: none;
@@ -49,12 +49,45 @@ body {
 .navbar-list a:hover {
     color: #00bcd4;
 }
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
 
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease; 
+}
+
+.facebook {
+     background: #1877F2;
+     }
+.instagram {
+     background: #E1306C; 
+    }
+.twitter {
+     background: #1DA1F2; 
+    }
+.youtube {
+     background: #FF0000; 
+    }
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
 /* Header and Title */
 h1 {
     text-align: center;
     margin: 20px;
-    font-size: 2em;
+    font-size: 32px;
     color: #333;
 }
 
@@ -64,27 +97,22 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 2px;
 }
-
-
 .property-item {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     cursor: pointer;
     text-align: center;
     width: 20%;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-    
+    box-shadow:  rgba(0, 0, 0, 0.1);
 }
 .property-item:hover {
     transform: scale(1.05);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .property-item img {
@@ -97,34 +125,32 @@ h1 {
     transform: scale(1.1);
     }
     .property-item h2 {
-        font-size: 1.25em;
-        color: rgba(0, 0, 0, 0.747);
-        margin-top: 10px;
-
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.795);
+        margin-top: 5px;
     }
     
     .property-item p {
-        font-size: 0.8em;
-        color: #666666e3;
+        font-size: 15px;
+        color:rgba(0, 0, 0, 0.637);
         margin: 5px 0;
         margin-top: -5px;
-
     }
 
 .display-area {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 2px;
     justify-content: center;
     border: 2px solid #ccc;
     padding: 10px;
     }
-
 .display-area img {
     width:24%;
     height: auto;
     border-radius: 10px;
 }
+/* styling button */
 .view{
     background: #8e793e;
     color: white;
@@ -134,10 +160,10 @@ h1 {
     cursor: pointer;
     font-size: 12px;
    margin-left: -170px;
- 
+   margin-bottom: 5px;
 }
 .view:hover {
-    background: #0056b3;
+    background:orange;
 }
 .action-container {
     display: flex;
@@ -146,7 +172,7 @@ h1 {
 }
 
 button {
-    background:#0057b3c9;
+    background:#0057b3b7;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -162,7 +188,7 @@ button:hover {
 /* Comment Section Styles */
 .comment-section {
     width: 150px;
-    background: #f8f9fa;
+    background: #f9f9f9;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -175,11 +201,10 @@ textarea {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-top: -15px;
+    margin-top: 10px;
 }
-
 .comment-section button {
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
 /* Style the icons */
@@ -194,37 +219,35 @@ textarea {
 .like-icon:hover {
     color: red;
 }
-
 .fa-thumbs-up:hover {
     color: blue;
 }
 
-
 .main {
-    max-width: 850px;
     width: 100%;
+    height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: gray; */
     margin-top: 10px;
+    
 }
-
-/* Centering the Form */
+.main span{
+    color: orange;
+}
 form {
     width: 100%;
-    max-width: 600px;
+    height: auto;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
-
 h3 {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 20px;
     color: #333;
     text-align: center;
@@ -235,8 +258,9 @@ h3 {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 15px;
     width: 100%;
-    border-radius: 30px;
-    border: 30px solid rgba(0, 128, 0, 0.692);
+   
+    border: 15px solid #ddd;
+    box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 input[type="search"], select {
@@ -253,163 +277,65 @@ input[type="search"], select {
     padding: 12px 30px;
     font-size: 18px;
     color: #ffffff;
-    background-color: #007bff;
+    background-color:darkorange;
+    border-radius: 65px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
+    
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color:blue;
+    
 }
 
-/* Larger Screens (Laptops and desktops) */
-@media (min-width: 1024px) {
-    body {
-        padding: 40px; 
-    }
 
-    .navbar-list a {
-        font-size: 1.2em;
+/* Responsive For All Device */
+  
+/* Mobile Phones (Width: 480px or Smaller) */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 1.5em;
+    }
+
+    .navbar-list a {
+        font-size: 14px; 
+        padding: 8px;
     }
 
     .property {
-        gap: 30px;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .property-item {
         padding: 10px;
     }
 
-    .main {
-        max-width: 850px;
-    }
-    .action-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .view{
-        margin-left: 10px;
-    }
-    textarea {
-      margin-left: -10px;
-    }
-}
-
-/* Extra-Large Screens (13-inch to 16-inch and Above) */
-@media (min-width: 1440px) {
-    body {
-        padding: 50px; 
-    }
-
-    .navbar {
-        padding: 20px 50px;
-    }
-
-    .navbar-list {
-        gap: 30px;
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    .property {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 40px;
-    }
-
-    .property-item {
-        max-width: 300px;
-        padding: 25px;
-        
-    }
-    
-
     .property-item h2 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .property-item p {
-        font-size: 1.1em;  
-    }
-
-    .main {
-        max-width: 900px;
-    }
-}
-
-/*  */
- @media (min-width: 768px) and (max-width: 1023px) {
-    body {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2.25em;
-    }
-
-    .navbar-list {
-        flex-direction: row; /* Adjust navbar layout */
-        gap: 15px;
-        justify-content: center;
-    }
-
-    .property {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Slightly larger grid layout */
-    }
-
-    .property-item h2 {
-        font-size: 1.4em; 
-    }
-
-    .property-item p {
-        font-size: 0.75em;
-        
-    }
-
-    .action-container {
-        flex-direction: row;
-        justify-content: space-evenly;
-        max-width: 300px;
-        margin: auto;
-    }
-
-    .comment-section {
-        max-width: 80%;
-        margin: auto;
-    }
-
-    button {
-        font-size: 0.9em;
-        padding: 8px;
-    }
-    .view{
-        margin-left:7px;
-        padding: 5px; 
-    }
-
-    .post {
-        font-size: 0.8em;
-        padding: 5px;
-        max-width: 100px;
-    }
-
-    textarea {
-        font-size: 12px;
-        max-width: 80%;
+        font-size: 0.7em;
     }
 
     .main {
         max-width: 95%;
+        padding: 10px;
     }
-} 
+}
 
+@media (min-width: 1500px) {
+    .action-container {
+        max-width: 800px;
+    }
+}
 
 /* Tablets (Width: 768px or Smaller) */
 @media (max-width: 768px) {
@@ -435,6 +361,9 @@ input[type="search"], select {
     .navbar-list .logo {
         width: 130px;
         margin-bottom: 15px;
+    }
+    .social-icons a{
+        font-size: 20px;
     }
     .property {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
@@ -482,52 +411,165 @@ input[type="search"], select {
     }
 }
 
-/* Mobile Phones (Width: 480px or Smaller) */
-@media (max-width: 480px) {
+/* Responsive for between 768px and 1023 */
+@media (min-width: 768px) and (max-width: 1023px) {
     body {
-        padding: 5px;
+        padding: 20px;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 2.25em;
     }
-
-    .navbar-list a {
-        font-size: 14px; 
-        padding: 8px;
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    .navbar-list {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+    .navbar-list .logo{
+        margin-top: -20px;
     }
 
     .property {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .property-item {
-        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .property-item h2 {
-        font-size: 1em;
+        font-size: 1.4em; 
     }
 
     .property-item p {
-        font-size: 0.7em;
+        font-size: 0.75em;
+        
+    }
+
+    .action-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .comment-section {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    .view{
+        margin-left:7px;
+        padding: 5px; 
+    }
+
+    .post {
+        font-size: 0.8em;
+        padding: 5px;
+        max-width: 100px;
+    }
+
+    textarea {
+        font-size: 12px;
+        max-width: 80%;
     }
 
     .main {
         max-width: 95%;
+    }
+}
+
+/* Larger Screens (Laptops and desktops) */
+@media (min-width: 1024px) {
+    body {
+        padding: 40px; 
+    }
+    .navbar{
+        margin-top: -30px;
+    }
+
+    .navbar-list a {
+        font-size: 30px;
+    
+    }
+    .navbar-list {
+        gap: 20px;
+    }
+    .navbar-list .logo{
+        margin-top: -15px;
+        margin-left: -30px;
+    }
+    
+
+    h1 {
+        font-size: 45px;
+    }
+    .property-item {
         padding: 10px;
     }
-}
 
-@media (min-width: 1500px) {
+    .main {
+        max-width: 850px;
+    }
     .action-container {
-        max-width: 800px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .view{
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    textarea {
+      margin-left: -10px;
     }
 }
 
 
+/* Extra-Large Screens (13-inch to 16-inch and Above) */
+@media (min-width: 1440px) {
+    body {
+        padding: 50px; 
+    }
 
+    .navbar {
+        padding: 20px 50px;
+    }
 
+    .navbar-list {
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .property {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+    }
+
+    .property-item {
+        max-width: 300px;
+        padding: 25px;
+        
+    }
+    
+
+    .property-item h2 {
+        font-size: 1.5em;
+    }
+
+    .property-item p {
+        font-size: 1.1em;  
+    }
+    .main {
+        max-width: 900px;
+    }
+}
 
 
